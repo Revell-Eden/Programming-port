@@ -20,9 +20,12 @@ header {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 30px 10%;
+    padding: 15px 10%;
 }
 
+label {
+    z-index: 1001;
+}
 .logoAnchor {
     cursor: pointer;
     margin-right: auto;
@@ -67,15 +70,29 @@ button:hover {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 30px 10%;
+    padding-left: 10%;
     width: 40%;
     height: 90%;
 }
 
+.text-centered {
+    text-align: center;
+}
 .card {
     box-sizing: border-box;
     background-color: #fff;
-    border-radius: 10%;
+    border-radius: 5%;
     z-index: 1000;
-    display: flex;
+    padding: 20px;
 }
+
+.bg-secondary {
+    background-color: #0088a9;
+}
+
+.label {
+    background-color: aquamarine;
+    color: #fff;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* Animation in Css */
