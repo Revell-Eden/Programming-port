@@ -31,10 +31,6 @@ label {
     margin-right: auto;
 }
 
-.navLine {
-    /* class for added scss */
-}
-
 .nav-link {
     list-style: none;
 }
