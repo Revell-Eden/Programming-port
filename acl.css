@@ -21,6 +21,7 @@ header {
     justify-content: flex-end;
     align-items: center;
     padding: 15px 10%;
+    z-index: 100;
 }
 
 label {
@@ -62,10 +63,13 @@ button:hover {
 }
 
 #homeBg {
-    background-image: url(../GitProjects/bg.jpg);
-    background-color: #fff;
+    float: top;
+    position: fixed;
 }
 
+.panelBox {
+    z-index: 50;
+}
 .cardContainer1 {
     display: flex;
     justify-content: flex-end;
