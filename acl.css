@@ -31,6 +31,10 @@ label {
     margin-right: auto;
 }
 
+.navLine {
+    /* class for added scss */
+}
+
 .nav-link {
     list-style: none;
 }
@@ -66,31 +70,41 @@ button:hover {
     background-color: #fff;
 }
 
-.cardContainerL {
+.cardContainer1 {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding-left: 10%;
+    padding-left: 5%;
     width: 40%;
     float: left;
     padding-right: 2px;
 }
 
-.cardContainerR {
+.cardContainer2 {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding-right: 10%;
+    padding-right: 5%;
     width: 60%;
     float: right;
     padding-left: 2px;
+}
+
+.cardContainer3 {
+    display: flex;
+    padding-right: 5%;
+    padding-left: 5%;
+    width: 100%;
+    padding-top: 2px;
+    justify-content: end;
+    margin-right: auto;
 }
 
 .text-centered {
     text-align: center;
 }
 .card {
-    box-sizing: border-box;
+    font-size: 1em;
     background-color: #fff;
     border-radius: 5%;
     z-index: 1000;
@@ -98,11 +112,11 @@ button:hover {
 }
 
 .bg-secondary {
-    background-color: #0088a9;
+    background-color: #24252A;
 }
 
 .label {
-    background-color: aquamarine;
+    background-color: #008080;
     color: #fff;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -115,5 +129,12 @@ button:hover {
     box-sizing: border-box;
     padding-left: 30px;
     padding-top: 0px;
+}
+
+.galleryImage {
+    min-width: 30%;
+    min-height: 10%;
+    max-width: 100%;
+    max-height: 10%;
 }
 /* Animation in Css */
