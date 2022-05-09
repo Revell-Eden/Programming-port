@@ -43,7 +43,7 @@
       <ul>
        <li><a class="nav-link active" href="#"> Home </a></li>
        <li><a class="nav-link" href="About.html">About</a></li>
-       <li><a class="nav-link" href="ContactMe.html">Gallery</a></li>
+       <li><a class="nav-link" href="Gallery.html">Gallery</a></li>
       </ul>
     </nav>
     <a class="cta" href="#"><button>Contact</button></a>
@@ -51,9 +51,11 @@
  
 
   <!-- Home Background div -->
-  <div id="homeBg"></div>
-
-  <div id="homeContent" class="cardContainer">
+  <div id="homeBg">
+  <!-- Home card panes -->
+<div class="panelBox">
+  <!-- Left pane -->
+  <div id="homeContent" class="cardContainerL">
     <div id="homeContLPane" class="card scroleable">
       <div class="bg-secondary">
         <label class="label text-centered"><h3>Left Panel</h3></label>
@@ -63,9 +65,19 @@
     </div>
   </div>
   
+  <!-- Right pane -->
+  <div id="homeContent" class="cardContainerR">
+    <div id="homeContLPane" class="card scroleable">
+      <div class="bg-secondary">
+        <label class="label text-centered"><h3>Right Panel</h3></label>
+        <p> Positioning of formatted text to find optimal path and layout for each card cvontianer and component </p>
+        </br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+      </div>
+    </div>
+  </div>
+</div> <!-- End panelBox div -->
 
 </div>
-
 </div> <!-- Wrapper div -->
 </body>
 </html>
