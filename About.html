@@ -6,6 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Programming-port/About</title>
     <link rel="stylesheet" type="text/css" href="about.css">
+    <script src="Extendable script.js"></script>
+    <!-- Ion Icons icon library -->
+
+
+    <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
+
+
 </head>
 <body>
     
@@ -21,6 +29,19 @@
         </header>
         <div class="headImage">
             <img class="banner-image" src="bg-about.jpg">
+        </div>
+
+        <div class="accordion">
+            <div class="aStem"><button onclick="toggleContent1()"><ion-icon name="menu"></ion-icon></button></div>
+            <div id="hidden1">Submenu Item Placeholder <br><br><br><br></div>
+            
+            <div class="aStem"><button onclick="toggleContent2()"><ion-icon name="menu"></ion-icon></button></div>
+            <div id="hidden2">Submenu Item Placeholder<br><br><br><br></div>
+            
+            <div class="aStem"><button onclick="toggleContent3()"><ion-icon name="menu"></ion-icon></button></div>
+            <div id="hidden3">Submenu Item Placeholder<br><br><br><br></div>
+            
+            
         </div>
 
         <section>
