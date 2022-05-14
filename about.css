@@ -23,6 +23,7 @@ body {
     align-items: center;
     border-radius: 10px;
     padding-top: 10px;
+    justify-content: end;
 }
 
 .navigation ul {
