@@ -1,73 +1,166 @@
 /* Classes Library acl */
 /* Layout */
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    background-color: #24252A;
-    z-index: 100;
+body {
+    background-color: lightblue;
+    font-size: 14px;
 }
 
-li, a, button {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    color: #fff;
-    text-decoration: none;
-}
-header {
+
+/* navbar elements */
+body {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
-    padding: 15px 10%;
-    z-index: 100;
+    padding-top: 35px;
+    background-color: #222327;
 }
 
-label {
-    z-index: 1001;
+.navigation {
+    position: relative;
+    width: 400;
+    height: 60px; 
+    background-color: rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding-top: 10px;
+    justify-content: end;
 }
+
+.navigation ul {
+    display: flex;
+    width: 350px;
+    padding-right: 30px;
+}
+
+.navigation ul li {
+    list-style: none;
+    position: relative;
+    width: 70px;
+    height: 60px;
+    z-index: 2;
+}
+
+.navigation ul li a {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.navigation ul li a .icon {
+    position: relative;
+    width: 55px;
+    height: 55px;
+    background-color: teal;
+    text-align: center;
+    line-height: 65px;
+    border-radius: 50%;
+    color: #222327;
+    font-size: 1.5em;
+    transition: 0.5s;
+    transition-delay: 0.25s;
+}
+
+.navigation ul li.active a .icon{
+    background-color: teal;
+    color: #fff;
+    transform: translateY(-35px);
+    justify-content: center;
+}
+
+.navigation ul li a .icon::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: teal;
+    border-radius: 50%;
+    filter: blur(5px);
+    opacity: 0.5;
+    transition: 0.5s;
+    transition-delay: 0s;
+    justify-content: center;
+}
+
+.navigation ul li.active a .icon::after {
+    opacity: 0.5;
+    transition-delay: 0.25s;
+    justify-content: center;
+}
+
+.indicator {
+    position: absolute;
+    top: -35px;
+    width: 70px;
+    height: 70px;
+    background-color: #fff;
+    border-radius: 50%;
+    z-index: 1;
+    transition: 0.5;
+}
+
+.indicator::before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: -28px;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border-radius: 50%;
+    box-shadow: 15px 18px #fff;
+}
+
+.indicator::after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    right: -28px;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border-radius: 50%;
+    box-shadow: -15px 18px #fff;
+}
+
+.navigation ul li:nth-child(1).active ~ .indicator {
+    transform: translateX(calc(70px * 0));
+}
+
+.navigation ul li:nth-child(2).active ~ .indicator {
+    transform: translateX(calc(70px * 1));
+}
+
+.navigation ul li:nth-child(3).active ~ .indicator {
+    transform: translateX(calc(70px * 2));
+}
+
+.navigation ul li:nth-child(4).active ~ .indicator {
+    transform: translateX(calc(70px * 3));
+}
+
+.navigation ul li:nth-child(5).active ~ .indicator {
+    transform: translateX(calc(70px * 4));
+}
+/* Content Elements*/
+
 .logoAnchor {
     cursor: pointer;
     margin-right: auto;
 }
 
-.nav-link {
-    list-style: none;
-}
-.nav-link li {
-    display: inline-block;
-    padding: 0px 20px;
-}
-
-.nav-link li a {
-    transition: all 0.3s ease 0s;
-}
-
-.nav-link li a:hover {
-    color: #0088a9;
-}
-
-button {
-    padding: 9px 25px;
-    margin-left: 20px;
-    background-color: rgba(0,136,169,1);
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-}
-
-button:hover {
-    background-color: rgba(0,136,169,0.8)
-}
-
-#homeBg {
-    float: top;
-    position: fixed;
+.banner-image {
+    width: 100%;
 }
 
 .panelBox {
+    background-color: rgba(255, 255, 255, 0.5);
     z-index: 50;
 }
 .cardContainer1 {
