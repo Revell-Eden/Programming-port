@@ -9,15 +9,36 @@
 </head>
 <body>
     <div id="wrapper">
-          <header>
-            <img class="logoAnchor" src="../GitProjects/logo.svg"/>
-            <nav id="navlinks" class="nav-link">
-            <a class="cta" href="Portfolio reimagined Home.html"><button>Home</button></a>
-            <a class="cta" href="#"><button>About</button></a>
-            <a class="cta" href="Gallery.html"><button>Gallery</button></a>
-            <a class="cta" href="#"><button>Contact</button></a>
-          </nav>
-          </header>
+      <div class="navigation">
+        <ul>
+            <li class="list ">
+                <a href="Portfolio reimagined Home.html">
+                    <span class="icon"><ion-icon name="home"></ion-icon></span>
+                </a>
+            </li >
+            <li class="list">
+                <a href="Portfolio reimagined Home.html">
+                    <span class="icon"><ion-icon name="contact"></ion-icon></span>
+                </a>
+            </li >
+            <li class="list">
+                <a href="Gallery.html">
+                    <span class="icon"><ion-icon name="images"></ion-icon></span>
+                </a>
+            </li >
+            <li class="list active">
+                <a href="#">
+                    <span class="icon"><ion-icon name="chatbubbles"></ion-icon></span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#">
+                    <span class="icon"><ion-icon name="link"></ion-icon></span>
+                </a>
+            </li>
+            <div class="indicator"></div>
+        </ul>
+    </div>
 
             <!-- Contact Query -->
         <div class="container">
@@ -33,32 +54,32 @@
                     <div class="callignment">
                         <div class="input-group">
                             <label>Name</label>
-                            <input type="text" placeholder="John Mars">
+                            <input id="iname" type="text" placeholder="John Mars">
                         </div>
                         
                         <div class="input-group">
                           <label>Phone</label>
-                          <input type="text" placeholder="+1 123 456 7890">
+                          <input id="iphone" type="text" placeholder="+1 123 456 7890">
                         </div>
 
                         <div class="input-group">
                           <label>Email</label>
-                          <input type="text" placeholder="johnonmars@gmail.com">
+                          <input id="iemail" type="text" placeholder="johnonmars@gmail.com">
                         </div>
                     </div>
                     <div class="span-allignment">
                         <div class="input-group">
                           <label>Subject</label>
-                          <input type="text" placeholder="A detailed subject written here!">
+                          <input id="isubject" type="text" placeholder="A detailed subject written here!">
                         </div>
                     </div>
                     <div>
                       <label>Message</label> 
-                      <textarea rows="5" placeholder="Your Message Here"></textarea>
+                      <textarea id="icontent" rows="5" placeholder="Your Message Here"></textarea>
                     </div>
 
 
-                    <button class="submitB" type="submit">Send</button>
+                    <button id="emailQuery" class="submitB" type="submit">Send</button>
                 </form>
                 </div>
             
@@ -83,6 +104,20 @@
              </div>
         </div>
         
+        <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
+
+    <script>
+        const list = document.querySelectorAll('.list');
+        function activeLink() {
+            list.forEach((item) =>
+            item.classList.remove('active'));
+            this.classList.add('active')
+        }
+        list.forEach((item) =>
+        item.addEventListener('click',activeLink))
+    </script>
+
 </div>
 </body>
 </html>
