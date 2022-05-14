@@ -100,6 +100,7 @@ button:hover {
     height: 100%;
     background-color: #0088a9;
     display: none;
+    padding: 10px 30px;
 }
 
 .aStem {
@@ -107,4 +108,16 @@ button:hover {
     margin-bottom: 0px;
     border-bottom: teal;
     border-bottom: 1px solid teal;
+   
 }
+
+#hiddenAnim1, #hiddenAnim2, #hiddenAnim3 {
+    width: 100;
+    height: 100%;
+    background-color: #0088a9;
+    display: none;
+    font-size: 30px; 
+    padding: 10px 30px;
+}
+
+
