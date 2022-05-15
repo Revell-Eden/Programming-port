@@ -171,7 +171,7 @@ p {
 .container {
     padding: 10px 30px;
     justify-content: center;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.3);
     border-radius: 10px;
 }
 
@@ -186,7 +186,7 @@ p {
  }
 
 .content-left {
-    background-color: rgba(255, 255, 255, 0.75);
+    background-color: #fff;
     border-radius: 10px;
     box-shadow: -2px 2px #b3b3b3;
     padding: 0px 20px;
@@ -197,7 +197,7 @@ p {
 }
 
 .content-right1 {
-    background-color: rgba(255, 255, 255, 0.75);
+    background-color: #fff;
     border-radius: 10px;
     box-shadow: -2px 2px #b3b3b3;
     padding: 0px 20px;
