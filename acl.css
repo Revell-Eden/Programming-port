@@ -177,11 +177,11 @@ p {
 
 .headinglabel {
     padding: 0px 20px;
-    border-bottom: 1px solid teal;
+    border-bottom: 3px solid teal;
     justify-content: center;
     font-size: 2em;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: rgba(255, 255, 255, 0.8);
+    color: #fff;
     margin-bottom: 10px;
  }
 
