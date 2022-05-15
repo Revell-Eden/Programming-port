@@ -1,5 +1,6 @@
 body {
     font-size: 14px;
+    color: teal;
 }
 
 
@@ -10,6 +11,19 @@ body {
     align-items: center;
     padding-top: 35px;
     background-color: #222327;
+}
+
+.logoAnchor {
+    cursor: pointer;
+    margin-left: 20px;
+    margin-right: auto;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: #fff;
+    padding: 2px;
+    border-radius: 10px;
+    align-items: center;
 }
 
 .navigation {
