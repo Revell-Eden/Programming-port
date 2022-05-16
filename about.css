@@ -169,14 +169,36 @@ body {
     width: 100%;
 }
 
-.accordion {
-    background-color: rgba(255, 255, 255, 0.5);
+.container {
+    padding: 10px 30px;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
 }
 
 .toggleAnchor {
     width: 30px;
     height: 30px;
+    background-color: teal;
 }
+.aButton1{
+    background-color: teal;
+    border-color: teal;
+    border-top-left-radius: 10px;
+} 
+
+.aButton2 {
+    background-color: teal;
+    border-color: teal;
+}
+
+.aButton3 {
+    background-color: teal;
+    border-color: teal;
+    border-bottom-left-radius: 10px;
+}
+
+
 
 #hidden1, #hidden2, #hidden3 {
     width: 100;
@@ -184,39 +206,91 @@ body {
     background-color: #0088a9;
     display: none;
     padding: 10px 30px;
+    background-color: rgba(255, 255, 255, 0.3);
 }
 
-.aStem {
+.aStem1 {
     background-color: #333;
     margin-bottom: 0px;
     border-bottom: teal;
     border-bottom: 1px solid teal;
-
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
 }
 
+.aStem2 {
+    background-color: #333;
+    margin-bottom: 0px;
+    border-bottom: teal;
+    border-bottom: 1px solid teal;
+}
+
+.aStem3 {
+    background-color: #333;
+    margin-bottom: 0px;
+    border-bottom: teal;
+    border-bottom: 1px solid teal;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
 
 .container {
     padding: 10px 30px;
     padding-top: 0px;
-    padding-bottom: 0px;
-    margin-bottom: 40px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
     justify-content: center;
 }
 
-.container-box {
-    background-color: #fff;
+.contentStack {
+    width: 100%;
+    justify-content: space-between; 
+    padding-right: 10px;
+}
+
+.contentSbs {
     display: flex;
-    padding-left: 60px;
-    padding-right: 0px;
 }
 
-.container-left {
-    flex-basis: 70%;
-}
-
-.container-right {
-    flex-basis: 30%;
-    padding: 20px;
-    background-color: teal;
+.headinglabel {
+    padding: 0px 20px;
+    border-bottom: 3px solid teal;
+    justify-content: center;
+    font-size: 2em;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: #fff;
+    margin-bottom: 10px;
+ }
+
+.container-box {
+    background-color: #333;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 10px 10px;
+    border-top: 5px solid teal
+}
+
+.panel {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: -2px 2px #b3b3b3;
+    padding: 5px 5px;
+    justify-content: center;
+    width: 25%;
+    float: left;
+    margin-right: 5px;
+}
+
+.noheader {
+    padding-top: 10px;
+}
+
+.thumbnail {
+    width: 100%;
+    background-color: teal;
+    border-radius: 10px;
+}
+
+label {
+    color: teal;
 }

@@ -54,28 +54,54 @@
             <img class="banner-image" src="bg-about.jpg">
         </div>
 
-        <div class="accordion">
-            <div class="aStem"><button onclick="toggleContent1()"><ion-icon name="menu"></ion-icon></button></div>
-              <div id="hidden1">Submenu Item Placeholder <br><br><br><br></div>
-
-            
-            <div class="aStem"><button onclick="toggleContent2()"><ion-icon name="menu"></ion-icon></button></div>
-              <div id="hidden2">Submenu Item Placeholder<br><br><br><br></div>
-              
-
-            <div class="aStem"><button onclick="toggleContent3()"><ion-icon name="menu"></ion-icon></button></div>
-              <div id="hidden3">Submenu Item Placeholder<br><br><br><br></div>
-            
-            
+        <!-- About Me container -->
+        <div class="container">
+            <div class="headinglabel">
+              <span>About Me</span>
+            </div>
+            <div class="contentStack"></div>
         </div>
 
-        <section>
-            <div id="textfloat"class="container">
-                <div class="container container-box">
-                <p>Placeholder text to test the formattability of the webpage to different vieports</p>
+
+        <div class="container">
+            <div class="headinglabel">
+              <span>Languages</span>
+            </div>
+            <div class="contentStack">
+            <div class="accordion">
+              <div class="aStem1"><button class="aButton1" onclick="toggleContent1()"><ion-icon name="menu"></ion-icon></button>
+                <span>Js</span></div>
+                <div id="hidden1">Submenu Item Placeholder <br><br><br><br></div>
+
+            
+              <div class="aStem2"><button class="aButton2" onclick="toggleContent2()"><ion-icon name="menu"></ion-icon></button>
+                <span>Html</span></div>
+                <div id="hidden2">Submenu Item Placeholder<br><br><br><br></div>
+              
+
+              <div class="aStem3"><button class="aButton3" onclick="toggleContent3()"><ion-icon name="menu"></ion-icon></button>
+                <span>Python</span></div>
+                <div id="hidden3">Submenu Item Placeholder<br><br><br><br></div>
                 
             </div>
-        </section>
+            </div>
+        </div>
+
+        <div class="container noheader">
+            <div class="contentSbs">
+              <div class="panel cert">
+                  <img class="thumbnail" src="panel-istqb.png"/>
+                  <div class="container-box"><label>APMG certified!</label> 
+                      International Software Testing Qualifications Board
+                  </div>
+                </div>
+              <div class="panel">panel</div>
+              <div class="panel">panel</div>
+              <div class="panel">panel</div>
+            </div>
+        </div>
+
+        
 
 
 
