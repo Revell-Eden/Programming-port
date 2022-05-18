@@ -76,7 +76,7 @@ body {
     color: #222327;
     font-size: 1.5em;
     transition: 0.5s;
-    transition-delay: 0.25s;
+    transition-delay: 0;
 }
 
 .navigation ul li.active a .icon{
@@ -169,8 +169,23 @@ body {
     margin-right: auto;
 }
 
-.banner-image {
+.headImage{
     width: 100%;
+    position: relative;
+}
+
+.imageOverlay {
+    background-color: rgba(0,0,0,0.8);
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    margin: 0;
+}
+
+#overlayContent {
+    padding: 10px;
+    border-radius: 10px;
+    border-bottom: 3px solid teal;
 }
 
 .content {
@@ -187,6 +202,8 @@ p {
     justify-content: center;
     background-color: rgba(255, 255, 255, 0.3);
     border-radius: 10px;
+    color: #fff;
+    margin-bottom: 5px;
 }
 
 .headinglabel {
@@ -197,26 +214,43 @@ p {
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: #fff;
     margin-bottom: 10px;
- }
+}
 
-.content-left {
-    background-color: #fff;
+.contentSbs {
+    background-color: rgb(5, 51, 132);
     border-radius: 10px;
     box-shadow: -2px 2px #b3b3b3;
     padding: 0px 20px;
-    justify-content: center;
-    width: 46%;
     float: left;
+    flex-wrap: wrap;
+    padding: 10px 20px; 
+    display: flex;
+    margin-right: 5px;
+    width: 50%;
+}
+
+#statCnt {
+    font-family: OCR A Std, monospace;
+    position: relative;
+}
+
+.ringCnt {
+    padding: 5px;
+    width: 100%;
+    position: relative;
+}
+
+.ring {
+    background-color: rgb(19, 42, 186);
+    border-radius: 50%; 
+    width: 80px;
+    height: 80px; 
+    float: left;
+    flex-wrap: wrap;
+    display: flex;
     margin-right: 5px;
 }
 
-.content-right1 {
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: -2px 2px #b3b3b3;
-    padding: 0px 20px;
-    justify-content: center;
-    width: 46%;
-    float: right;
+.flex {
+    display: flex;
 }
-
