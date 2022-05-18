@@ -241,16 +241,26 @@ p {
 }
 
 .ring {
-    background-color: rgb(19, 42, 186);
+    background-color: rgba(255, 255, 255, 0.3);
     border-radius: 50%; 
-    width: 80px;
-    height: 80px; 
+    border-style: solid;
+    border-color: teal;
+    border-top-color: #fff;
+    width: 120px;
+    height: 120px; 
     float: left;
     flex-wrap: wrap;
     display: flex;
     margin-right: 5px;
+    text-align: center;
+    align-content: center;
 }
 
 .flex {
     display: flex;
+}
+
+.pPadded {
+    padding: 5px;
+
 }
