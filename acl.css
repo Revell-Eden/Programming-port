@@ -217,7 +217,7 @@ p {
 }
 
 .contentSbs {
-    background-color: rgb(5, 51, 132);
+    background-color: rgb(0, 87, 87);
     border-radius: 10px;
     box-shadow: -2px 2px #b3b3b3;
     padding: 0px 20px;
@@ -227,6 +227,7 @@ p {
     display: flex;
     margin-right: 5px;
     width: 50%;
+    padding-bottom: 20px;
 }
 
 #statCnt {
@@ -263,4 +264,16 @@ p {
 .pPadded {
     padding: 5px;
 
+}
+label {
+    font-size: 2em;
+}
+p {
+    padding-left: 20px;
+}
+.quote {
+    padding: 10px 40px;
+}
+#webDev1 {
+    border-radius: 10px;
 }
