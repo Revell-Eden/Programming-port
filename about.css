@@ -72,10 +72,10 @@ body {
     color: #222327;
     font-size: 1.5em;
     transition: 0.5s;
-    transition-delay: 0.25s;
+    transition-delay: 0;
 }
 
-.navigation ul li.active a .icon{
+.navigation ul li.active a .icon {
     background-color: teal;
     color: #fff;
     transform: translateY(-35px);
@@ -165,7 +165,7 @@ body {
     margin-right: auto;
 }
 
-.banner-image {
+.headImage{
     width: 100%;
 }
 
@@ -246,6 +246,7 @@ body {
     width: 100%;
     justify-content: space-between; 
     padding-right: 10px;
+    height: 100%;
 }
 
 .contentSbs {
@@ -266,8 +267,8 @@ body {
 
 .flip-card {
     background-color: transparent;
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     perspective: 1000px;
     position: relative;
     display: flex;
@@ -308,7 +309,7 @@ body {
 }
 
 .flip-card-back {
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: teal;
     color: #fff;
     transform: rotateY(180deg);
     border-radius: 10px;
@@ -316,5 +317,5 @@ body {
 }
 
 label {
-    color: teal;
+    color: #fff;
 }
