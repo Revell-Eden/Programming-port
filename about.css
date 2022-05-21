@@ -168,12 +168,82 @@ body {
 .headImage{
     width: 100%;
 }
+.downbutton:hover, .downbutton label:hover {
+    cursor: pointer;
+}
+.download {
+    width: 100%;
+}
+.downbutton {
+    border-radius: 50%;
+    background-color: teal;
+    width: 10em;
+    height: 10em;
+    border-color: teal;
+    margin: 73px;
+}
+/* loader animation */
+@keyframes loader {
+    0% {
+      width: 5em;
+      height: 5em;
+      opacity: 1;
+    }
+    100% {
+      width: 7em;
+      height: 7em;
+      opacity: 0;
+    }
+  }
+  .loader {
+    width: 10em;
+    height: 10em;
+  }
+  .download {
+      position: relative;
+  }
+  .butcont {
+      padding: 10px;
+  }
+  .loader:before,
+  .loader:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    margin: auto;
+    border-radius: 50%;
+    border: 3px solid teal;
+  }
 
+   .loader:before,
+  .loader:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    margin: auto;
+    border-radius: 50%;
+    border: 3px solid teal;
+  }
+  .loader:before {
+    animation: loader 2s linear infinite 0s;
+  }
+  .loader:after {
+    animation: loader 2s linear infinite 1s;
+  }
 .container {
     padding: 10px 30px;
     justify-content: center;
     background-color: rgba(255, 255, 255, 0.3);
     border-radius: 10px;
+    margin-right: 5px;
 }
 
 .toggleAnchor {
@@ -236,10 +306,10 @@ body {
 
 .container {
     padding: 10px 30px;
-    padding-top: 0px;
     padding-bottom: 10px;
     margin-bottom: 10px;
     justify-content: center;
+    padding-top: 10px;
 }
 
 .contentStack {
@@ -253,6 +323,13 @@ body {
     flex-wrap: wrap;
     padding: 10px 20px;
     position: relative;
+    display: flex;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.fl {
+    float: left;
 }
 
 .headinglabel {
