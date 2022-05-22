@@ -190,7 +190,8 @@ body {
 
 .content {
     display: flex;
-    width: 100%;    
+    width: 100%;   
+    padding: 5px 5px;
 }
 
 p {
@@ -221,11 +222,10 @@ p {
     border-radius: 10px;
     box-shadow: -2px 2px #b3b3b3;
     padding: 0px 20px;
-    float: left;
     flex-wrap: wrap;
     padding: 10px 20px; 
     margin-right: 5px;
-    width: 50%;
+    width: 25em;
     padding-bottom: 20px;
 }
 
@@ -281,5 +281,11 @@ p {
     float: left;
 }
 
-.cnt {
+.fl-cont { 
+    float: left;
+    margin: 0px  20px;
+}
+
+img {
+    border-radius: 10px;
 }
