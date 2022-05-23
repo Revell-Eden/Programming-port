@@ -168,21 +168,21 @@ body {
 .headImage{
     width: 100%;
 }
+.download {
+}
 .downbutton:hover, .downbutton label:hover {
     cursor: pointer;
-}
-.download {
-    width: 100%;
-    display: flex;
-    padding: 30px;
-    justify-content: end;
 }
 .downbutton {
     border-radius: 50%;
     background-color: teal;
-    width: 10em;
-    height: 10em;
+    width: 5em;
+    height: 5em;
     border-color: teal;
+    text-decoration: none;
+    justify-content: center;
+    display: flex;
+    padding: 30px;
 }
 /* loader animation */
 @keyframes loader {
@@ -205,7 +205,7 @@ body {
   .loader:before {
     content: '';
     position: absolute;
-    top: -10px;
+    top: -8px;
     left: -15px;
     right: -10px;
     bottom: 0;
@@ -217,7 +217,7 @@ body {
   .loader:after {
     content: '';
     position: absolute;
-    top: -10px;
+    top: -8px;
     left: -15px;
     right: -10px;
     bottom: 0;
@@ -238,8 +238,8 @@ body {
     background-color: rgba(255, 255, 255, 0.3);
     border-radius: 10px;
     margin-right: 5px;
+    margin-bottom: 5px;
 }
-
 .toggleAnchor {
     width: 30px;
     height: 30px;
@@ -298,12 +298,9 @@ body {
     border-bottom-left-radius: 10px;
 }
 
-.container {
-    padding: 10px 30px;
-    padding-bottom: 10px;
-    margin-bottom: 10px;
-    justify-content: center;
-    padding-top: 10px;
+.bubblecnt {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.3);
 }
 
 .contentStack {
@@ -317,7 +314,6 @@ body {
     flex-wrap: wrap;
     padding: 10px 20px;
     position: relative;
-    display: flex;
     width: 100%;
     margin-bottom: 10px;
 }
@@ -339,8 +335,8 @@ body {
 
 .flip-card {
     background-color: transparent;
-    width: 250px;
-    height: 250px;
+    width: 19em;
+    height: 19em;
     perspective: 1000px;
     position: relative;
     display: flex;
@@ -390,4 +386,100 @@ body {
 
 label {
     color: #fff;
+}
+/* Waves */
+section {
+    position: relative;
+    width: 15em;
+    height: 15vh;
+    background-color: teal;
+    overflow: hidden;
+    border-radius: 200px;
+}
+section .wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 15em;
+    height: 100px;
+    background: url(wave.png);
+    background-size: 1000px 100px;
+}
+
+section .wave.wave1 {
+    animation: animate 30s linear infinite;
+    z-index: 1000;
+    opacity: 1;
+    animation-delay: 0s;
+    bottom: 0;
+}
+section .wave.wave2 {
+    animation: animate2 15s linear infinite;
+    z-index: 999;
+    opacity: 0.5;
+    animation-delay: -5s;
+    bottom: 10px;
+}
+section .wave.wave3 {
+    animation: animate3 15s linear infinite;
+    z-index: 998;
+    opacity: 0.2;
+    animation-delay: -2s;
+    bottom: 10px;
+}
+section .wave.wave4 {
+    animation: animate4 5s linear infinite;
+    z-index: 997;
+    opacity: 0.7;
+    animation-delay: -5s;
+    bottom: 20px;
+}
+@keyframes animate {
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: 1000px;
+    }
+}
+@keyframes animate2 {
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: -1000px;
+    }
+}
+@keyframes animate3 {
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: -1000px;
+    }
+}
+@keyframes animate4 {
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: 1000px;
+    }
+}
+.flctext {
+    text-align: center;
+    vertical-align: middle;
+    font-size: 3em;
+    color: #000;
+    position: relative;
+    z-index: 1001;
+    padding: 20px;
+}
+.bubblestrt {
+    border-radius: 200px;
+    padding: 0px;
+    justify-content: start;
+}
+.marginBottom {
+    margin-bottom: 20px;
 }

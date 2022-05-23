@@ -58,20 +58,67 @@
         <div class="container">
           <div class="headinglabel">
             <span>About Me</span></div>
-              <div class="contentSbs">
-                <div class="container fl">
-                  <p>Placeholder context goes here! This text will wrap around the download button.<br><br><br><br></p>
-                  <!-- Download Button-->
-                </div>    
+              
+
                 <div class="download">
                     <div class="loader">
-                      <button class="downbutton" onclick="click, downloadCV()">
-                        <label>Download a turbocharged CV!</label>
-                        </button>
+                        <a class="downbutton" id="downLink" href="CV.developer.pdf"><label>Download a turbocharged CV!</label></a>
                     </div>
                   </div>
+                </div>
+              <div class="contentSbs"> 
+              <!-- Wave box -->
+              <div class="bubblecnt bubblestrt contentSbs">
+                <section>
+                  <div class="flctext">.Js</div>
+                  <div class="wave wave1"></div>
+                  <div class="wave wave2"></div>
+                  <div class="wave wave3"></div>
+                  <div class="wave wave4"></div>
+                </section>
+                <p>Test content to see how the content will stretch the appended parental class.</p> 
               </div>
+
+              <div class="bubblecnt bubblestrt contentSbs">
+                
+                <section>
+                  <div class="flctext">C#</div>
+                  <div class="wave wave1"></div>
+                  <div class="wave wave2"></div>
+                  <div class="wave wave3"></div>
+                  <div class="wave wave4"></div>
+                </section>
+                <p>Test content to see how the content will stretch the appended parental class.</p> 
               </div>
+
+              <div class="bubblecnt bubblestrt contentSbs">
+                <section>
+                  <div class="flctext">Python</div>
+                  <div class="wave wave1"></div>
+                  <div class="wave wave2"></div>
+                  <div class="wave wave3"></div>
+                  <div class="wave wave4"></div>
+                </section>
+                <p>Test content to see how the content will stretch the appended parental class.</p> 
+              </div>
+
+              <div class="bubblecnt bubblestrt contentSbs marginBottom">
+                
+                <section>
+                  <div class="flctext">Swift</div>
+                  <div class="wave wave1"></div>
+                  <div class="wave wave2"></div>
+                  <div class="wave wave3"></div>
+                  <div class="wave wave4"></div>
+                </section>
+                <p>Test content to see how the content will stretch the appended parental class.</p> 
+              </div>
+            </div>
+              
+
+
+
+
         <div class="container">
             <div class="headinglabel">
               <span>Languages</span>
@@ -154,13 +201,10 @@
             </div>
         </div>
 
-        
-
-
 
 <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
-
+</div>
     <script>
         const list = document.querySelectorAll('.list');
         function activeLink() {
@@ -171,11 +215,39 @@
         list.forEach((item) =>
         item.addEventListener('click',activeLink))
     </script>
-
-
-
-
-
-    </div>
+    
+    <!-- Downlaod CV function-->
+    <!-- <script type="text/javascript">
+      function DownloadFile(fileName) {
+            //Set the File URL.
+            var url = "Files/" + CV;
+ 
+            //Create XMLHTTP Request.
+            var req = new XMLHttpRequest();
+            req.open("GET", url, true);
+            req.responseType = "blob";
+            req.onload = function () {
+                //Convert the Byte Data to BLOB object.
+                var blob = new Blob([req.response], { type: "application/octetstream" });
+ 
+                //Check the Browser type and download the File.
+                var isIE = false || !!document.documentMode;
+                if (isIE) {
+                    window.navigator.msSaveBlob(blob, CV);
+                } else {
+                    var url = window.URL || window.webkitURL;
+                    link = url.createObjectURL(blob);
+                    var a = document.createElement("a");
+                    a.setAttribute("download", CV);
+                    a.setAttribute("href", link);
+                    document.body.appendChild(a);
+                    a.click();
+                    document.body.removeChild(a);
+                }
+            };
+            req.send();
+        }; -->
+    </script>
+    
 </body>
 </html>
