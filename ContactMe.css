@@ -303,12 +303,14 @@ table {
     width: 100%;
 }
 
-.query1 {
+.query {
     background-color: teal;
     border-color: teal;
     width: 3em;
     height: 3em;
     border-radius: 50%;
+    color: #fff;
+    padding: 5px;
 }
 
 .queryLeaf {
@@ -319,7 +321,7 @@ table {
 }
 .queryLeaf span {
     padding-right: 10px;
-    vertical-align:center;
+    vertical-align:middle;
 }
 .queryAllignment {
     width: 100%;
