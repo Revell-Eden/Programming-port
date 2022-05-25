@@ -6,8 +6,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, inital-scale=1">
     <!-- Stylesheets -->
-    <link rel="stylesheet" type="text/css" href="acl.css" />
+    <link rel="stylesheet" type="text/css" href="acl.css">
     <link rel="stylesheet" type="text/scss" href="Breakpoints.scss">
+    <link rel="stylesheet" type="text/css" href="Background-animation.css">
+    <link rel="stylesheet" type="text/css" href="navigation.css">
+    <link rel="stylesheet" type="text/css" href="toast.css">
+    <script src="navbarController.JS"></script>
+    <script src="toastBotController.js"></script>
     
     
     <title> Eden Revell- PortfolioPage </title>
@@ -38,6 +43,23 @@
 <body>
 
 <div id="wrapper">
+  <section>
+    <div class="wave wave1"></div>
+    <div class="wave wave2"></div>
+    <div class="wave wave3"></div>
+    <div class="wave wave4"></div>
+  </section>
+  <!-- Toast BOT -->
+    <alert class="toast">
+      <img class="thumbnail" src="toastbot.png">
+      <div class="botCnt">
+        <div class="toastHead"><label>Toast_BOT</label>
+          <button class="remove"><a class="icon">X</a></button>
+        </div>
+        <div class="toastCnt"><p>Hey Stranger! You must be new to this Website</p></div>
+      </div>
+    </alert>
+<!-- End Toast BOT -->
   <div class="navigation">
     <div class="logoAnchor"><label> < > Front-End Developer </label></div>
     <ul>
@@ -52,18 +74,8 @@
             </a>
         </li >
         <li class="list">
-            <a href="Gallery.html">
-                <span class="icon"><ion-icon name="images"></ion-icon></span>
-            </a>
-        </li >
-        <li class="list">
-            <a href="#">
+            <a href="Contact Me.html">
                 <span class="icon"><ion-icon name="chatbubbles"></ion-icon></span>
-            </a>
-        </li>
-        <li class="list">
-            <a href="#">
-                <span class="icon"><ion-icon name="link"></ion-icon></span>
             </a>
         </li>
         <div class="indicator"></div>
@@ -71,24 +83,24 @@
   </div>
 
    <div class="headImage">
-     <img class="banner-image" src="bg-home.jpg">
+     <img class="banner-image" src="vector_237_09-01-512.webp">
    </div>
 
 
     <!-- Home card panes -->
     <div class="container flex">
-          <span id="statCnt"><label>Statistics:</label></span>
+          <span id="statCnt"><label class="fw">Statistics:</label></span>
           <div class="ringCnt">
             <div class="ring" id="ring1"><p class="pPadded">Github Contributions Made:</p>
               <span id="Contributions" class="padded"></span>
             </div>
-            <div class="ring" id="ring1"><p class="pPadded">Projects Completed:</p>
+            <div class="ring" id="ring1"><p class="pPadded">Projects Completed:<br><br><strong>1</strong></p>
               <span id="Projects" class="padded"></span>
             </div>
             <div class="ring" id="ring1"><p class="pPadded">Client Reviews:</p>
               <span id="clientReviews" class="padded"></span>
             </div>
-            <div class="ring" id="ring1"><p class="pPadded">Satisfaction Guarantee:</p></div>
+            <div class="ring" id="ring1"><p class="pPadded">Satisfaction Guarantee:<br><br><strong>100%<strong></p></div>
           </div>
     </div>
     
@@ -99,7 +111,7 @@
         <div class="content">
         <!-- Website development Panel -->
         <div class="contentSbs">
-          <label>// This Website  &#9757; //</label><br>
+          <label class="fw hlabel">// This Website  &#9757; //</label><br>
           <img id="webDev1"src="webDev1.png"/>
           <br>
           <div class="cnt">
@@ -112,7 +124,7 @@
           </p>
           <p>As my skills diversified, I developed a taste for intricacy--the minor details moulding my vision of a desirable portfolio.</p>
              
-          <label>// Features &#10024;</label>
+          <label class="fw hlabel">// Features &#10024;</label>
           <p>This Website displays a plethora of;<br>
              -Dynamic Animations<br>
              -Interactive Navigable menu<br>
@@ -124,29 +136,25 @@
 
         <!-- E-commerce panel -->
         <div class="contentSbs ">
-          <label>// Content Managment System (CMS) &#127793; //</label><br>
-          <img id="webDev2"src="..."/>  
+          <label class="fw hlabel">// Content Managment System (CMS) &#127793; //</label><br>  
           <div class="cnt">
-          <p>Time for some late night shopping!<br><br>
-            This refined highly refined e-shop utilises a simple UX that allows fast, fluid navigation between pages.
-            Featuring a high speed server turnover, marketable requests are verified and processed by the websites internal autonomous functions; 
-            allowing concise ordering to be completed quickly.<br><br>
+          <p>Your creativity; unshackled and free! <br><br>
+            Whether it is a blog, website, or webapplication; Content Made Simple is the service for you.
+            With a core focus placed on utility and seamless tranferance of edited data, We at CMS pride ourselves on aiding startup businesses<br><br>
         
             <div class="fl-cont">
             <img src="CMSlogoalt.png">
             </div>
 
-            Light-speed payment gateways authorise account information effeciently, removing the dreaded loading bar that never ends.
-            Customer and Merchant satisfaction is at the core of our teams aspirations.<br><br>
-            @swiftfox we work to grow your business.
+            Through a combination of outsourced projects, CMS utilises a range of microservices to fulfill the culmination of user interests.
+            Afoot is a new hybrid of service that will inspire all to follow their creative passions; and generate an outlet for free expression.
           </p>
         </div>
         </div>
 
         <!--CMS Project Panel-->
         <div class="contentSbs ">
-          <label>// E-Commerce  &#128179; //</label><br>
-          <img id="webDev2"src="..."/>  
+          <label class="fw hlabel">// E-Commerce  &#128179; //</label><br>
           <div class="cnt">
           <p>Time for some late night shopping!<br><br>
             This refined highly refined e-shop utilises a simple UX that allows fast, fluid navigation between pages.
@@ -168,8 +176,7 @@
       <div class="content">
         <!--Webapp Panel-->
         <div class="contentSbs ">
-          <label>// Webapp  &#128241; //</label><br>
-          <img id="webDev2"src="..."/>  
+          <label class="fw hlabel">// Webapp  &#128241; //</label><br> 
           <div class="cnt">
           <p>Time for some late night shopping!<br><br>
             This refined highly refined e-shop utilises a simple UX that allows fast, fluid navigation between pages.
@@ -197,17 +204,5 @@
 
 <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
-
-    <script>
-        const list = document.querySelectorAll('.list');
-        function activeLink() {
-            list.forEach((item) =>
-            item.classList.remove('active'));
-            this.classList.add('active')
-        }
-        list.forEach((item) =>
-        item.addEventListener('click',activeLink))
-    </script>
-
 </body>
 </html>
