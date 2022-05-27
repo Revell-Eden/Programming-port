@@ -1,6 +1,10 @@
 body {
     font-size: 14px;
     color: #fff;
+    margin: 0;
+    width: 100%;
+    max-height: 100%;
+    max-width: 100%;
 }
 
 
@@ -12,177 +16,27 @@ body {
     padding-top: 35px;
     background-color: #222327;
 }
-
-.logoAnchor {
-    cursor: pointer;
-    margin-left: 20px;
-    margin-right: auto;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 18px;
-    font-weight: 400;
-    background-color: #fff;
-    padding: 2px;
-    border-radius: 10px;
-    align-items: center;
+#wrapper {
+    max-width: 86em;
 }
-
-.navigation {
-    position: relative;
-    width: 400;
-    height: 60px; 
-    background-color: rgba(255, 255, 255, 0.1);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    padding-top: 10px;
-    justify-content: end;
-}
-
-.navigation ul {
-    display: flex;
-    width: 350px;
-    padding-right: 30px;
-}
-
-.navigation ul li {
-    list-style: none;
-    position: relative;
-    width: 70px;
-    height: 60px;
-    z-index: 2;
-}
-
-.navigation ul li a {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
-}
-
-.navigation ul li a .icon {
-    position: relative;
-    width: 55px;
-    height: 55px;
-    background-color: teal;
-    text-align: center;
-    line-height: 65px;
-    border-radius: 50%;
-    color: #222327;
-    font-size: 1.5em;
-    transition: 0.5s;
-    transition-delay: 0;
-}
-
-.navigation ul li.active a .icon {
-    background-color: teal;
-    color: #fff;
-    transform: translateY(-35px);
-    justify-content: center;
-}
-
-.navigation ul li a .icon::before {
-    content: '';
-    position: absolute;
-    top: 10px;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: teal;
-    border-radius: 50%;
-    filter: blur(5px);
-    opacity: 0.5;
-    transition: 0.5s;
-    transition-delay: 0s;
-    justify-content: center;
-}
-
-.navigation ul li.active a .icon::after {
-    opacity: 0.5;
-    transition-delay: 0.25s;
-    justify-content: center;
-}
-
-.indicator {
-    position: absolute;
-    top: -35px;
-    width: 70px;
-    height: 70px;
-    background-color: #fff;
-    border-radius: 50%;
-    z-index: 1;
-    transition: 0.5;
-}
-
-.indicator::before {
-    content: '';
-    position: absolute;
-    top: 5px;
-    left: -28px;
-    width: 30px;
-    height: 30px;
-    background-color: transparent;
-    border-radius: 50%;
-    box-shadow: 15px 18px #fff;
-}
-
-.indicator::after {
-    content: '';
-    position: absolute;
-    top: 5px;
-    right: -28px;
-    width: 30px;
-    height: 30px;
-    background-color: transparent;
-    border-radius: 50%;
-    box-shadow: -15px 18px #fff;
-}
-
-.navigation ul li:nth-child(1).active ~ .indicator {
-    transform: translateX(calc(70px * 0));
-}
-
-.navigation ul li:nth-child(2).active ~ .indicator {
-    transform: translateX(calc(70px * 1));
-}
-
-.navigation ul li:nth-child(3).active ~ .indicator {
-    transform: translateX(calc(70px * 2));
-}
-
-.navigation ul li:nth-child(4).active ~ .indicator {
-    transform: translateX(calc(70px * 3));
-}
-
-.navigation ul li:nth-child(5).active ~ .indicator {
-    transform: translateX(calc(70px * 4));
-}
-/* Content Elements*/
-
-.logoAnchor {
-    cursor: pointer;
-    margin-right: auto;
-}
-
 .headImage{
     width: 100%;
+}
+.download {
 }
 .downbutton:hover, .downbutton label:hover {
     cursor: pointer;
 }
-.download {
-    width: 100%;
-    display: flex;
-    padding: 30px;
-    justify-content: end;
-}
 .downbutton {
     border-radius: 50%;
     background-color: teal;
-    width: 10em;
-    height: 10em;
+    width: 5em;
+    height: 5em;
     border-color: teal;
+    text-decoration: none;
+    justify-content: center;
+    display: flex;
+    padding: 30px;
 }
 /* loader animation */
 @keyframes loader {
@@ -205,7 +59,7 @@ body {
   .loader:before {
     content: '';
     position: absolute;
-    top: -10px;
+    top: -8px;
     left: -15px;
     right: -10px;
     bottom: 0;
@@ -217,7 +71,7 @@ body {
   .loader:after {
     content: '';
     position: absolute;
-    top: -10px;
+    top: -8px;
     left: -15px;
     right: -10px;
     bottom: 0;
@@ -233,13 +87,15 @@ body {
     animation: loader 2s linear infinite 1s;
   }
 .container {
+    position: relative;
     padding: 10px 30px;
     justify-content: center;
     background-color: rgba(255, 255, 255, 0.3);
     border-radius: 10px;
     margin-right: 5px;
+    margin-bottom: 5px;
+    z-index: 100;
 }
-
 .toggleAnchor {
     width: 30px;
     height: 30px;
@@ -297,29 +153,21 @@ body {
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
 }
-
-.container {
-    padding: 10px 30px;
-    padding-bottom: 10px;
-    margin-bottom: 10px;
-    justify-content: center;
-    padding-top: 10px;
-}
-
 .contentStack {
     width: 100%;
     justify-content: space-between; 
     padding-right: 10px;
     height: 100%;
-}
 
+}
 .contentSbs {
     flex-wrap: wrap;
     padding: 10px 20px;
     position: relative;
-    display: flex;
     width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+    z-index: 150;
+    display: flex;
 }
 
 .fl {
@@ -335,12 +183,14 @@ body {
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: #fff;
     margin-bottom: 10px;
+    height: 1.25em;
+    display: flex;
 }
 
 .flip-card {
     background-color: transparent;
-    width: 250px;
-    height: 250px;
+    width: 20em;
+    height: 20em;
     perspective: 1000px;
     position: relative;
     display: flex;
@@ -390,4 +240,19 @@ body {
 
 label {
     color: #fff;
+}
+.bubblecnt {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.3);
+    margin-right: 5px;
+    border-radius: 200px;
+    padding: 0px;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+.bubbleBox {
+    max-width:49%;
+}
+.padTop {
+    padding: 10px 0px;
 }

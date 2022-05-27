@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Programming-port/About</title>
     <link rel="stylesheet" type="text/css" href="about.css">
+    <link rel="stylesheet" type="text/css" href="progress.css">
+    <link rel="stylesheet" type="text/css" href="Background-animation.css">
+    <link rel="stylesheet" type="text/css" href="navigation.css">
     <script src="Extendable script.js"></script>
     <!-- Ion Icons icon library -->
 
@@ -16,38 +19,35 @@
 
 </head>
 <body>
-    
-    <div id="wrapper">
-      <div class="navigation">
-        <div class="logoAnchor"><label> < > Front-End Developer </label></div>
-        <ul>
-            <li class="list ">
-                <a href="Portfolio reimagined Home.html">
-                    <span class="icon"><ion-icon name="home"></ion-icon></span>
-                </a>
-            </li >
-            <li class="list active">
-                <a href="Portfolio reimagined Home.html">
-                    <span class="icon"><ion-icon name="contact"></ion-icon></span>
-                </a>
-            </li >
-            <li class="list">
-                <a href="Gallery.html">
-                    <span class="icon"><ion-icon name="images"></ion-icon></span>
-                </a>
-            </li >
-            <li class="list">
-                <a href="#">
-                    <span class="icon"><ion-icon name="chatbubbles"></ion-icon></span>
-                </a>
-            </li>
-            <li class="list">
-                <a href="#">
-                    <span class="icon"><ion-icon name="link"></ion-icon></span>
-                </a>
-            </li>
-            <div class="indicator"></div>
-        </ul>
+  <div id="wrapper">
+    <section>
+      <div class="wave wave1"></div>
+      <div class="wave wave2"></div>
+      <div class="wave wave3"></div>
+      <div class="wave wave4"></div>
+    </section>
+      
+    <div class="navigation">
+      <div class="logoAnchor"><label> < > Front-End Developer </label></div>
+      <ul>
+          <li class="list ">
+              <a href="Portfolio reimagined Home.html">
+                  <span class="icon"><ion-icon name="home"></ion-icon></span>
+              </a>
+          </li >
+          <li class="list active">
+              <a href="#">
+                  <span class="icon"><ion-icon name="contact"></ion-icon></span>
+              </a>
+          </li >
+          <li class="list">
+              <a href="Contact Me.html">
+                  <span class="icon"><ion-icon name="chatbubbles"></ion-icon></span>
+              </a>
+          </li>
+          </li>
+          <div class="indicator"></div>
+      </ul>
     </div>
 
         <div class="headImage">
@@ -58,20 +58,79 @@
         <div class="container">
           <div class="headinglabel">
             <span>About Me</span></div>
-              <div class="contentSbs">
-                <div class="container fl">
-                  <p>Placeholder context goes here! This text will wrap around the download button.<br><br><br><br></p>
-                  <!-- Download Button-->
-                </div>    
+              
+
                 <div class="download">
                     <div class="loader">
-                      <button class="downbutton" onclick="click, downloadCV()">
-                        <label>Download a turbocharged CV!</label>
-                        </button>
+                        <a class="downbutton" id="downLink" href="CV.developer.pdf"><label>Download a turbocharged CV!</label></a>
                     </div>
                   </div>
+                </div>
+               
+              <!-- Languages Div -->
+              <!-- HTML Language information -->
+            <div class="contentSbs padTop">
+              <div class="bubblecnt bubbleBox">
+                <div class="contentSbs">
+                  <div class="dashboard">
+                    <svg>
+                      <circle class="bg" cx="57" cy="57" r="52" />
+                      <circle class="meter-1" cx="57" cy="57" r="52" />
+                    </svg>
+                  </div>
+                  <div class="bubbleBox">
+                    <div class="headinglabel">. Html</div>
+                    <p>Test content to see how the content will stretch the appended parental class.<br><br><br><br></p>
+                  </div>
+                </div>
               </div>
+              <!-- Javascript information -->
+              <div class="bubblecnt bubbleBox">
+                <div class="contentSbs">
+                  <div class="dashboard">
+                    <svg>
+                      <circle class="bg" cx="57" cy="57" r="52" />
+                      <circle class="meter-2" cx="57" cy="57" r="52" />
+                    </svg>
+                  </div>
+                  <div class="bubbleBox">
+                    <div class="headinglabel">. Js</div>
+                    <p class="contentSbs">Test content to see how the content will stretch the appended parental class.</p>
+                  </div>
+                </div>
               </div>
+              <!-- C# Information -->
+              <div class="bubblecnt bubbleBox">
+                <div class="contentSbs">
+                  <div class="dashboard">
+                    <svg>
+                      <circle class="bg" cx="57" cy="57" r="52" />
+                      <circle class="meter-3" cx="57" cy="57" r="52" />
+                    </svg>
+                  </div>
+                  <div class="bubbleBox">
+                    <div class="headinglabel">C#</div>
+                    <p class="contentSbs">Test content to see how the content will stretch the appended parental class.</p>
+                  </div>
+                </div>
+              </div>
+            <!-- Python information -->
+            <div class="bubblecnt bubbleBox">
+              <div class="contentSbs">
+                <div class="dashboard">
+                  <svg>
+                    <circle class="bg" cx="57" cy="57" r="52" />
+                    <circle class="meter-4" cx="57" cy="57" r="52" />
+                  </svg>
+                </div>
+                <div class="bubbleBox">
+                  <div class="headinglabel">Python</div>
+                  <p class="contentSbs">Test content to see how the content will stretch the appended parental class.</p>
+                </div>
+              </div>
+            </div>
+           </div>
+
         <div class="container">
             <div class="headinglabel">
               <span>Languages</span>
@@ -96,7 +155,7 @@
             </div>
         </div>
 
-            <div class="contentSbs"> 
+            <div class="contentSbs padTop"> 
                 <div class="flip-card">
                     <div class="flip-card-inner"> 
                       <div class="flip-card-front">
@@ -153,13 +212,11 @@
                 </div>
             </div>
         </div>
-
-        
-
-
-
+      </div>
+</div>
 <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
+
 
     <script>
         const list = document.querySelectorAll('.list');
@@ -171,11 +228,39 @@
         list.forEach((item) =>
         item.addEventListener('click',activeLink))
     </script>
-
-
-
-
-
-    </div>
+    
+    <!-- Downlaod CV function-->
+    <!-- <script type="text/javascript">
+      function DownloadFile(fileName) {
+            //Set the File URL.
+            var url = "Files/" + CV;
+ 
+            //Create XMLHTTP Request.
+            var req = new XMLHttpRequest();
+            req.open("GET", url, true);
+            req.responseType = "blob";
+            req.onload = function () {
+                //Convert the Byte Data to BLOB object.
+                var blob = new Blob([req.response], { type: "application/octetstream" });
+ 
+                //Check the Browser type and download the File.
+                var isIE = false || !!document.documentMode;
+                if (isIE) {
+                    window.navigator.msSaveBlob(blob, CV);
+                } else {
+                    var url = window.URL || window.webkitURL;
+                    link = url.createObjectURL(blob);
+                    var a = document.createElement("a");
+                    a.setAttribute("download", CV);
+                    a.setAttribute("href", link);
+                    document.body.appendChild(a);
+                    a.click();
+                    document.body.removeChild(a);
+                }
+            };
+            req.send();
+        }; -->
+    </script>
+    
 </body>
 </html>

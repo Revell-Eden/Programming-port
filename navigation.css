@@ -1,16 +1,14 @@
-body {
-    background-color: lightblue;
-    font-size: 14px;
-}
-
-
-/* navbar elements */
-body {
-    display: flex;
-    justify-content: center;
+.logoAnchor {
+    cursor: pointer;
+    margin-left: 20px;
+    margin-right: auto;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: #fff;
+    padding: 2px;
+    border-radius: 10px;
     align-items: center;
-    padding-top: 35px;
-    background-color: #222327;
 }
 
 .navigation {
@@ -59,7 +57,7 @@ body {
     color: #222327;
     font-size: 1.5em;
     transition: 0.5s;
-    transition-delay: 0.25s;
+    transition-delay: 0;
 }
 
 .navigation ul li.active a .icon{
@@ -150,60 +148,4 @@ body {
 .logoAnchor {
     cursor: pointer;
     margin-right: auto;
-}
-
-.banner-image {
-    width: 100%;
-}
-
-.accordion {
-    background-color: rgba(255, 255, 255, 0.5);
-}
-
-.toggleAnchor {
-    width: 30px;
-    height: 30px;
-}
-
-#hidden1, #hidden2, #hidden3 {
-    width: 100;
-    height: 100%;
-    background-color: #0088a9;
-    display: none;
-    padding: 10px 30px;
-}
-
-.aStem {
-    background-color: #333;
-    margin-bottom: 0px;
-    border-bottom: teal;
-    border-bottom: 1px solid teal;
-
-}
-
-
-.container {
-    padding: 10px 30px;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    margin-bottom: 40px;
-    justify-content: center;
-}
-
-.container-box {
-    background-color: #fff;
-    display: flex;
-    padding-left: 60px;
-    padding-right: 0px;
-}
-
-.container-left {
-    flex-basis: 70%;
-}
-
-.container-right {
-    flex-basis: 30%;
-    padding: 20px;
-    background-color: teal;
-    color: #fff;
 }
