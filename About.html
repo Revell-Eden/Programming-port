@@ -9,6 +9,8 @@
     <link rel="stylesheet" type="text/css" href="progress.css">
     <link rel="stylesheet" type="text/css" href="Background-animation.css">
     <link rel="stylesheet" type="text/css" href="navigation.css">
+    <link rel="stylesheet" type="text/css" href="Breakpoints.css">
+    <script src="navbarController.js"></script>
     <script src="Extendable script.js"></script>
     <!-- Ion Icons icon library -->
 
@@ -19,7 +21,7 @@
 
 </head>
 <body>
-  <div id="wrapper">
+
     <section>
       <div class="wave wave1"></div>
       <div class="wave wave2"></div>
@@ -55,22 +57,31 @@
         </div>
 
         <!-- About Me container -->
-        <div class="container">
           <div class="headinglabel">
-            <span>About Me</span></div>
-              
-
-                <div class="download">
-                    <div class="loader">
-                        <a class="downbutton" id="downLink" href="CV.developer.pdf"><label>Download a turbocharged CV!</label></a>
-                    </div>
-                  </div>
-                </div>
-               
+            <span>About Me</span>
+          </div>
+          <p class="article">console.log ("Hello World!");</p>
+          
+            <div class="container"> 
+              <p><br> My name is Eden Revell but you can call me Jack (A jack of all trades). 
+                Programming fufills my urge to learn an extremely diverse subset of languages within an extremely fast paced enviroment &#10024; a skill I have become akine to.
+                Web design reveals hindsight that will unvail a more breathable design before the product goes to market, further developing their defintion of a finished product.
+                Furthermore, the provision of perfectly layered webpages parallel to the client imagined perfect product, remains #1 priority as each instance will reflect my abilities as a craftsman. 
+                I aim to be more than just my best, rather the synonymous best that will continually grow and change with every endevour. <br><br></p>
+            </div>
+            <div class="download">
+              <div class="loader">
+                <button class="downbutton" type="button" onclick="download()"><a class="fw" href="CV.developer.pdf"><label class="fw">Download a turbocharged CV!</label></a></button>
+              </div>
+            </div>
+          </div>
               <!-- Languages Div -->
               <!-- HTML Language information -->
-            <div class="contentSbs padTop">
-              <div class="bubblecnt bubbleBox">
+            <div class="headinglabel">
+                <span><label class="fw">Languages:</label></span>
+            </div>
+            <div class="contentSbs padTop">  
+              <div class="bubblecnt">
                 <div class="contentSbs">
                   <div class="dashboard">
                     <svg>
@@ -85,7 +96,7 @@
                 </div>
               </div>
               <!-- Javascript information -->
-              <div class="bubblecnt bubbleBox">
+              <div class="bubblecnt">
                 <div class="contentSbs">
                   <div class="dashboard">
                     <svg>
@@ -100,7 +111,7 @@
                 </div>
               </div>
               <!-- C# Information -->
-              <div class="bubblecnt bubbleBox">
+              <div class="bubblecnt">
                 <div class="contentSbs">
                   <div class="dashboard">
                     <svg>
@@ -115,7 +126,7 @@
                 </div>
               </div>
             <!-- Python information -->
-            <div class="bubblecnt bubbleBox">
+            <div class="bubblecnt">
               <div class="contentSbs">
                 <div class="dashboard">
                   <svg>
@@ -131,35 +142,15 @@
             </div>
            </div>
 
-        <div class="container">
-            <div class="headinglabel">
-              <span>Languages</span>
-            </div>
-            <div class="contentStack">
-            <div class="accordion">
-              <div class="aStem1"><button class="aButton1" onclick="toggleContent1()"><ion-icon name="menu"></ion-icon></button>
-                <span>Js</span></div>
-                <div id="hidden1">Submenu Item Placeholder <br><br><br><br></div>
-
-            
-              <div class="aStem2"><button class="aButton2" onclick="toggleContent2()"><ion-icon name="menu"></ion-icon></button>
-                <span>Html</span></div>
-                <div id="hidden2">Submenu Item Placeholder<br><br><br><br></div>
-              
-
-              <div class="aStem3"><button class="aButton3" onclick="toggleContent3()"><ion-icon name="menu"></ion-icon></button>
-                <span>Python</span></div>
-                <div id="hidden3">Submenu Item Placeholder<br><br><br><br></div>
-                
-            </div>
-            </div>
-        </div>
-
+           <!-- Flip-Card Section -->
+          <div class="headinglabel">
+            <span><label class="fw">Qualifications:</label></span>
+          </div>
             <div class="contentSbs padTop"> 
                 <div class="flip-card">
                     <div class="flip-card-inner"> 
                       <div class="flip-card-front">
-                        <img src="panel-istqb.png"/>
+                        <img class="bumper" src="panel-istqb.png"/>
                       </div>
                       <div class="flip-card-back">
                         <label>APMG certified!</label>
@@ -171,7 +162,7 @@
                 <div class="flip-card">
                     <div class="flip-card-inner"> 
                       <div class="flip-card-front">
-                        <img src="panel-apmgscrum.png"/>
+                        <img class="bumper" src="panel-apmgscrum.png"/>
                       </div>
                       <div class="flip-card-back">
                         <label>APMG certified!</label>
@@ -182,7 +173,7 @@
                 <div class="flip-card">
                     <div class="flip-card-inner"> 
                       <div class="flip-card-front">
-                        <img src="panel-agile.png"/>
+                        <img class="bumper" src="panel-agile.png"/>
                       </div>
                       <div class="flip-card-back">
                         <label>APMG certified!</label>
@@ -200,7 +191,7 @@
                 <div class="flip-card">
                     <div class="flip-card-inner"> 
                       <div class="flip-card-front">
-                        <img src="panel-fortinet.png"/>
+                        <img class="bumper" src="panel-fortinet.png"/>
                       </div>
                       <div class="flip-card-back">
                         <label>Fortinet</label>
@@ -213,21 +204,9 @@
             </div>
         </div>
       </div>
-</div>
+
 <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
-
-
-    <script>
-        const list = document.querySelectorAll('.list');
-        function activeLink() {
-            list.forEach((item) =>
-            item.classList.remove('active'));
-            this.classList.add('active')
-        }
-        list.forEach((item) =>
-        item.addEventListener('click',activeLink))
-    </script>
     
     <!-- Downlaod CV function-->
     <!-- <script type="text/javascript">
