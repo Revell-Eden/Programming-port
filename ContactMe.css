@@ -32,7 +32,6 @@ body {
     padding: 20px;
     background-color: teal;
     color: #fff;
-    width: 30%;
     flex-wrap: wrap;
 }
 h1 {
@@ -138,9 +137,14 @@ table {
 }
 
 .footer {
+    margin: auto;
+    position: absolute;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
     display: flex;
+    bottom: 0em;
+    left: 0;
+    width: 100%;
 }
 .banner-image {
     width: 100%;
