@@ -9,6 +9,8 @@
     <link rel="stylesheet" type="text/css" href="progress.css">
     <link rel="stylesheet" type="text/css" href="Background-animation.css">
     <link rel="stylesheet" type="text/css" href="navigation.css">
+    <link rel="stylesheet" type="text/css" href="Breakpoints.css">
+    <script src="navbarController.js"></script>
     <script src="Extendable script.js"></script>
     <!-- Ion Icons icon library -->
 
@@ -19,14 +21,15 @@
 
 </head>
 <body>
-  <div id="wrapper">
-    <section>
-      <div class="wave wave1"></div>
-      <div class="wave wave2"></div>
-      <div class="wave wave3"></div>
-      <div class="wave wave4"></div>
-    </section>
-      
+  <div class="bgAnim">
+    <div class="wave wave1"></div>
+    <div class="wave wave2"></div>
+    <div class="wave wave3"></div>
+    <div class="wave wave4"></div>
+  </div>
+
+  <!-- Navigation Section -->
+  <section>
     <div class="navigation">
       <div class="logoAnchor"><label> < > Front-End Developer </label></div>
       <ul>
@@ -49,73 +52,51 @@
           <div class="indicator"></div>
       </ul>
     </div>
+</section>
 
+<!-- About Me container -->
+<section>
         <div class="headImage">
             <img class="banner-image" src="bg-about.jpg">
         </div>
-
-        <!-- About Me container -->
-        <div class="container">
           <div class="headinglabel">
-            <span>About Me</span></div>
-              
-
-                <div class="download">
-                    <div class="loader">
-                        <a class="downbutton" id="downLink" href="CV.developer.pdf"><label>Download a turbocharged CV!</label></a>
-                    </div>
-                  </div>
-                </div>
-               
+            <span>About Me</span>
+          </div>
+          <p class="article articleclr">console.log ("Hello World!");</p>
+            <div class="contentSbs">
+              <div class="container">
+                <p><br> My name is Eden Revell but you can call me Jack (A jack of all trades). I am an ispiring programming student studying under the Learning people banner of skilsoft's Code+ Aspire Journey.
+                Programming fufills my urge to learn an extremely diverse subset of languages within an extremely fast paced enviroment &#9889;, a skill I have become akine to.
+                Web design reveals hindsight that will unvail a more breathable design before the product goes to market, further developing their defintion of a finished product.
+                Furthermore, the provision of perfectly layered webpages parallel to the client imagined perfect product, remains #1 priority as each instance will reflect my abilities as a craftsman. 
+                I aim to be more than just my best, rather the synonymous best that will continually grow and change with every endevour. <br><br>
+                </p>
+              </div>
+              <img class="thumbnail" src="vector-about.webp">
+            </div>
+            <div class="download">
+              <div class="loader">
+                <button class="downbutton" type="button" onclick="download()"><a class="fw" href="CV.developer.pdf"><label class="fw">Download a turbocharged CV!</label></a></button>
+              </div>
+            </div>
+          </div>
               <!-- Languages Div -->
               <!-- HTML Language information -->
-            <div class="contentSbs padTop">
-              <div class="bubblecnt bubbleBox">
-                <div class="contentSbs">
-                  <div class="dashboard">
-                    <svg>
-                      <circle class="bg" cx="57" cy="57" r="52" />
-                      <circle class="meter-1" cx="57" cy="57" r="52" />
-                    </svg>
-                  </div>
-                  <div class="bubbleBox">
-                    <div class="headinglabel">. Html</div>
-                    <p>Test content to see how the content will stretch the appended parental class.<br><br><br><br></p>
-                  </div>
-                </div>
-              </div>
-              <!-- Javascript information -->
-              <div class="bubblecnt bubbleBox">
-                <div class="contentSbs">
-                  <div class="dashboard">
-                    <svg>
-                      <circle class="bg" cx="57" cy="57" r="52" />
-                      <circle class="meter-2" cx="57" cy="57" r="52" />
-                    </svg>
-                  </div>
-                  <div class="bubbleBox">
-                    <div class="headinglabel">. Js</div>
-                    <p class="contentSbs">Test content to see how the content will stretch the appended parental class.</p>
-                  </div>
-                </div>
-              </div>
-              <!-- C# Information -->
-              <div class="bubblecnt bubbleBox">
-                <div class="contentSbs">
-                  <div class="dashboard">
-                    <svg>
-                      <circle class="bg" cx="57" cy="57" r="52" />
-                      <circle class="meter-3" cx="57" cy="57" r="52" />
-                    </svg>
-                  </div>
-                  <div class="bubbleBox">
-                    <div class="headinglabel">C#</div>
-                    <p class="contentSbs">Test content to see how the content will stretch the appended parental class.</p>
-                  </div>
-                </div>
-              </div>
+            <div class="headinglabel">
+                <span><label class="fw">Languages:</label></span>
+            </div>
+            <div class="bgScene">
+              <ion-icon class="node" name="logo-html5"></ion-icon>
+              <ion-icon class="node" name="logo-css3"></ion-icon>
+              <ion-icon class="node" name="logo-nodejs"></ion-icon>
+              <ion-icon class="node" name="logo-python"></ion-icon>
+              <ion-icon class="node" name="logo-angular"></ion-icon>
+              <ion-icon class="node" name="git-pull-request"></ion-icon>
+              <ion-icon class="node" name="trophy"></ion-icon>
+            </div> 
+<!-- Code saved for expandable menu -->
             <!-- Python information -->
-            <div class="bubblecnt bubbleBox">
+            <!-- <div class="bubblecnt">
               <div class="contentSbs">
                 <div class="dashboard">
                   <svg>
@@ -130,107 +111,84 @@
               </div>
             </div>
            </div>
+          -->
+</section>
 
-        <div class="container">
-            <div class="headinglabel">
-              <span>Languages</span>
-            </div>
-            <div class="contentStack">
-            <div class="accordion">
-              <div class="aStem1"><button class="aButton1" onclick="toggleContent1()"><ion-icon name="menu"></ion-icon></button>
-                <span>Js</span></div>
-                <div id="hidden1">Submenu Item Placeholder <br><br><br><br></div>
-
-            
-              <div class="aStem2"><button class="aButton2" onclick="toggleContent2()"><ion-icon name="menu"></ion-icon></button>
-                <span>Html</span></div>
-                <div id="hidden2">Submenu Item Placeholder<br><br><br><br></div>
-              
-
-              <div class="aStem3"><button class="aButton3" onclick="toggleContent3()"><ion-icon name="menu"></ion-icon></button>
-                <span>Python</span></div>
-                <div id="hidden3">Submenu Item Placeholder<br><br><br><br></div>
-                
-            </div>
-            </div>
+<!-- Flip-Card Section -->
+<section>
+  <div class="headinglabel">
+    <span><label class="fw">Qualifications:</label></span>
+  </div>
+  <div class="contentSbs padTop"> 
+    <div class="flip-card">
+      <div class="flip-card-inner"> 
+        <div class="flip-card-front">
+          <img class="bumper" src="panel-istqb.png"/>
         </div>
-
-            <div class="contentSbs padTop"> 
-                <div class="flip-card">
-                    <div class="flip-card-inner"> 
-                      <div class="flip-card-front">
-                        <img src="panel-istqb.png"/>
-                      </div>
-                      <div class="flip-card-back">
-                        <label>APMG certified!</label>
-                        <p> Certified Tester Foundation Level requires a minimum of 6 months practical software testing. 
-                          The certification is maleablle in testing and developing streamline stableised products. </p>
-                      </div>
-                    </div>
-                </div>
-                <div class="flip-card">
-                    <div class="flip-card-inner"> 
-                      <div class="flip-card-front">
-                        <img src="panel-apmgscrum.png"/>
-                      </div>
-                      <div class="flip-card-back">
-                        <label>APMG certified!</label>
-                        <p>Qualified Scrum Master: a position that facilitates work preformed to elminate obstacles to the completion of timely tasks and goals.</p>
-                      </div>
-                    </div>
-                </div>
-                <div class="flip-card">
-                    <div class="flip-card-inner"> 
-                      <div class="flip-card-front">
-                        <img src="panel-agile.png"/>
-                      </div>
-                      <div class="flip-card-back">
-                        <label>APMG certified!</label>
-                        <p>A position that facilitates the following tasks:<br><br>
-                          - Project Planning<br><br> 
-                          - The creation of a product roadmap<br><br>
-                          - Release Planning<br><br>
-                          - Sprint planning <br><br>
-                          - Daily stand-ups<br><br>
-
-                        </p>
-                      </div>
-                    </div>
-                </div>
-                <div class="flip-card">
-                    <div class="flip-card-inner"> 
-                      <div class="flip-card-front">
-                        <img src="panel-fortinet.png"/>
-                      </div>
-                      <div class="flip-card-back">
-                        <label>Fortinet</label>
-                        <p>NSE4 qualified pen tester; knowledge in Fortigate firewall policies, user authentication process, SSL VPN; Alongside protection of networks using security profiles such as, ISP, antivirus, web filtering, and application control.
-                          Furthermore the certification covers routing, siter-to-site IPseec, SSO and diagnostics.
-                        </p>
-                      </div>
-                    </div>
-                </div>
-            </div>
+        <div class="flip-card-back">
+          <label>APMG certified!</label>
+            <p> Certified Tester Foundation Level requires a minimum of 6 months practical software testing. 
+                The certification is maleablle in testing and developing streamline stableised products. 
+            </p>
         </div>
       </div>
-</div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner"> 
+        <div class="flip-card-front">
+          <img class="bumper" src="panel-apmgscrum.png"/>
+        </div>
+        <div class="flip-card-back">
+          <label>APMG certified!</label>
+            <p>Qualified Scrum Master: a position that facilitates work preformed to elminate obstacles to the completion of timely tasks and goals.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner"> 
+        <div class="flip-card-front">
+          <img class="bumper" src="panel-agile.png"/>
+        </div>
+        <div class="flip-card-back">
+          <label>APMG certified!</label>
+            <p>A position that facilitates the following tasks:<br><br>
+               - Project Planning<br><br> 
+               - The creation of a product roadmap<br><br>
+               - Release Planning<br><br>
+               - Sprint planning <br><br>
+               - Daily stand-ups<br><br>
+            </p>
+        </div>
+      </div>
+    </div>
+              
+    <div class="flip-card">
+      <div class="flip-card-inner"> 
+        <div class="flip-card-front">
+          <img class="bumper" src="panel-fortinet.png"/>
+        </div>
+        <div class="flip-card-back">
+          <label>Fortinet</label>
+            <p>NSE4 qualified pen tester; knowledge in Fortigate firewall policies, user authentication process, SSL VPN; Alongside protection of networks using security profiles such as, ISP, antivirus, web filtering, and application control.
+               Furthermore the certification covers routing, siter-to-site IPseec, SSO and diagnostics.
+            </p>
+        </div>
+      </div>
+    </div>
+  </div> 
+</section>
+    
+          
+      
+    
 <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
-
-
-    <script>
-        const list = document.querySelectorAll('.list');
-        function activeLink() {
-            list.forEach((item) =>
-            item.classList.remove('active'));
-            this.classList.add('active')
-        }
-        list.forEach((item) =>
-        item.addEventListener('click',activeLink))
-    </script>
-    
+  
     <!-- Downlaod CV function-->
     <!-- <script type="text/javascript">
+      <script>
       function DownloadFile(fileName) {
             //Set the File URL.
             var url = "Files/" + CV;
@@ -259,8 +217,8 @@
                 }
             };
             req.send();
-        }; -->
+        }; 
     </script>
-    
+    -->
 </body>
 </html>
