@@ -1,37 +1,48 @@
 /* Classes Library acl */
 /* Layout */
-
 body {
     font-size: 14px;
     color: #fff;
     margin: auto;
-    width: 100%;
-    padding-top: 35px;
-    background-color: #222327;
+    padding:0.5em;
+    background: #243b47;
     flex-wrap: wrap;
-    position: relative;
 }
-.fw {
-    color:#fff;
+section {
+    margin-bottom: 0.5em;
+    margin: auto;
 }
-
-.content {
+.headImage{
     display: flex;
-    width: 100%;   
+}
+.content {
+    display: flex;  
     padding: 5px 5px;
     flex-wrap: wrap;
 }
-
-p {
-    margin: 0px;
-}
-
 .container {
     padding: 10px 30px;
-    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+.banner-image {
+    width: 100%;
+}
+p {
+    padding: 0.5em;
+}
+.statistics {
+    padding: 10px 0;
     background-color: rgba(255, 255, 255, 0.3);
     border-radius: 10px;
     color: #fff;
+    margin-bottom: 5px;
+    flex-wrap: wrap;
+}
+.projects {
+    justify-content: center;
+    border-radius: 10px;
     margin-bottom: 5px;
 }
 
@@ -41,10 +52,12 @@ p {
     justify-content: center;
     font-size: 2em;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: #fff;
     margin-bottom: 10px;
 }
-
+.thumbnail {
+    width: 8em;
+    height: 8em;
+}
 .contentSbs {
     background-color: rgb(0, 87, 87);
     border-radius: 10px;
@@ -53,20 +66,32 @@ p {
     flex-wrap: wrap;
     padding: 10px 20px; 
     margin-right: 5px;
-    width: 25em;
+    padding-bottom: 20px;
+    margin-bottom: 5px;
+}
+.projectCnt {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    box-shadow: -2px 2px #b3b3b3;
+    padding: 0px 20px;
+    flex-wrap: wrap;
+    padding: 10px 20px; 
+    margin-right: 5px;
     padding-bottom: 20px;
     margin-bottom: 5px;
 }
 
 #statCnt {
     font-family: OCR A Std, monospace;
-    position: relative;
 }
 
 .ringCnt {
-    padding: 5px;
     width: 100%;
-    position: relative;
+}
+#statimg{
+    width: 460px;
+    height: 60%;
+    margin-top: 5px;
 }
 
 .ring {
@@ -85,43 +110,41 @@ p {
     align-content: center;
 }
 
-.flex {
-    display: flex;
-}
-
 .pPadded {
     padding: 5px;
 
 }
 .hlabel {
     font-size: 2em;
-}
-p {
-    padding-left: 20px;
+    border-bottom: 3px solid #fff;
 }
 .quote {
-    padding: 10px 40px;
+    padding: 0em 1em;
+    border-radius: 0.5em;
+    padding: 0.5em;
+    background-color: #b3b3b3;
 }
 #webDev1 {
     border-radius: 10px;
-    width: 50%; 
+    width: 100%;
     padding: 5px;
     margin: 0 auto;
     float: left;
 }
 
-.fl-cont { 
-    float: left;
-    margin: 0px  20px;
-}
-
 img {
     border-radius: 10px;
 }
-.flex {
-    display: flex;
-}
+
 .headDiv {
     padding-top: 10px;
     font-size: 18px;
+}
+.toast {
+    display: flex;
+}
+.tribunal {
+    padding: 0.5em;
+    background-color: teal;
+    border-radius: 0.5em;
 }
