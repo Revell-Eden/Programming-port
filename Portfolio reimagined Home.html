@@ -3,9 +3,9 @@
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>    
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, inital-scale=1">
-    <!-- Stylesheets -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, inital-scale=1">
+  <!-- Stylesheets -->
     <link rel="stylesheet" type="text/css" href="acl.css">
     <link rel="stylesheet" type="text/css" href="Background-animation.css">
     <link rel="stylesheet" type="text/css" href="Breakpoints.css">
@@ -13,76 +13,58 @@
     <link rel="stylesheet" type="text/css" href="toast.css">
     <script src="navbarController.JS"></script>
     
-    <title> Eden Revell- PortfolioPage </title>
-
-    <!-- toast Stranger sript fo providing an onload toast -->
-    <script>          
-/*
-       window.onload = (event) => {
-         let myAlert = document.querySelectorAll('.toast')[0];
-         if (myAlert) {
-           let bsAlert = new bootstrap.Toast(myAlert);
-           bsAlert.show();
-         }
-       }; 
-       
-       /* Toast local session storage to avoid repeated popups upon a reload site call */
-       /*
-       if (!localStorage['done']) {
-       localStorage['done'] = 'yes';
-       myFunction();
-   }*/
-
-  </script>
-
-
-
+  <title> Eden Revell- PortfolioPage </title>
 </head>
-<body>
 
-  <section>
+<body>
+  <div class="bgAnim">
     <div class="wave wave1"></div>
     <div class="wave wave2"></div>
     <div class="wave wave3"></div>
     <div class="wave wave4"></div>
-  </section>
-  <!-- Toast BOT -->
-    <div id="toast" class="toast">
-      <ion-icon class="thumbnail" name="logo-ionitron"></ion-icon>
-      <div class="botCnt">
-        <div class="toastHead"><label>Toast_BOT</label>
-          <button id="dismiss" onclick="closeToast()">X</button>
-        </div>
-        <div class="toastCnt"><p>Hey Stranger! You must be new to this Website</p></div>
-      </div>
-    </div>
-<!-- End Toast BOT -->
-  <div class="navigation">
-    <div class="logoAnchor"><label> < > Front-End Developer </label></div>
-    <ul>
-        <li class="list active">
-            <a href="#">
-                <span class="icon"><ion-icon name="home"></ion-icon></span>
-            </a>
-        </li >
-        <li class="list">
-            <a href="About.html">
-                <span class="icon"><ion-icon name="contact"></ion-icon></span>
-            </a>
-        </li >
-        <li class="list">
-            <a href="Contact Me.html">
-                <span class="icon"><ion-icon name="chatbubbles"></ion-icon></span>
-            </a>
-        </li>
-        <div class="indicator"></div>
-    </ul>
-    <!-- Mobile Navbar: columned-->
   </div>
 
-   <div class="headImage">
-     <img class="banner-image" src="vector_237_09-01-512.webp">
-    <div class="container ralign"><label class="hlabel fw">Welcome!</label>
+<!-- Toast BOT -->
+  <div id="toast" class="toast">
+    <ion-icon class="thumbnail" name="logo-ionitron"></ion-icon>
+    <div class="botCnt">
+      <div class="toastHead"><label>Toast_BOT</label>
+        <button class="dismiss" id="dismiss" onclick="closeToast()">X</button>
+      </div>
+      <div class="toastCnt"><p>Hey Stranger! You must be new to this Website.
+        Please don't be afraid to contact me with any queries.
+      </p></div>
+    </div>
+  </div>
+<!-- End Toast BOT -->
+<section>
+  <div class="navigation">
+    <div class="logoAnchor"><label> < > Full-Stack Developer </label></div>
+    <ul>
+      <li class="list active">
+        <a href="#">
+          <span class="icon"><ion-icon name="home"></ion-icon></span>
+        </a>
+      </li >
+      <li class="list">
+        <a href="About.html">
+          <span class="icon"><ion-icon name="contact"></ion-icon></span>
+        </a>
+      </li >
+      <li class="list">
+        <a href="Contact Me.html">
+          <span class="icon"><ion-icon name="chatbubbles"></ion-icon></span>
+        </a>
+      </li>
+      <div class="indicator"></div>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <div class="headImage">
+    <img class="banner-image" src="vector_237_09-01-512.webp">
+    <div class="container ralign"><label class="hlabel">Welcome!</label>
       <p>It's amazing to have so many explorers on along for my newest voyage into a technological future. The summation of content throughout this page will
         index the journey from:<br>
         <br> &#10549; Front-End to Back-End coding
@@ -91,63 +73,64 @@
         <br> &#10549; Github Contributions 
         <br><br>
         Not to mention a range of Webapps, games, algorithms, and acculmuative coding experience.</p></div>
-     </div>  
+  </div>  
+</section>
 
-
-    <!-- Home card panes -->
-    <div class="statistics">
-        <div class="headinglabel">
-        <span><label class="fw">Statistics:</label></span>
-        </div>
-        <div class="ringCnt">
-            <div class="ring" id="ring1"><p class="pPadded">Github Contributions Made:</p>
-              <span id="Contributions" class="padded"></span>
-            </div>
-            <div class="ring" id="ring1"><p class="pPadded">Projects Completed:<br><br>1</p>
-              <span id="Projects" class="padded"></span>
-            </div>
-            <div class="ring" id="ring1"><p class="pPadded">Client Reviews:</p>
-              <span id="clientReviews" class="padded"></span>
-            </div>
-            <div class="ring" id="ring1"><p class="pPadded">Satisfaction Guarantee:<br><br>100%</p></div>
-        <img id="statimg" src="statistic-right.jfif">
-      </div>
+<section>
+  <!-- Home card panes -->
+  <div class="statistics">
+    <div class="headinglabel">
+      <span><label>Statistics:</label></span>
     </div>
-    
-    <div class="projects">
-        <div class="headinglabel">
-          <span>Projects!</span>
-        </div>
-        <div class="content">
-        <!-- Website development Panel -->
+    <div class="ringCnt">
+      <div class="ring" id="ring1"><p class="pPadded">Github Contributions Made:</p>
+        <span id="Contributions" class="padded"></span>
+      </div>
+      <div class="ring" id="ring1"><p class="pPadded">Projects Completed:<br><br>1</p>
+        <span id="Projects" class="padded"></span>
+      </div>
+      <div class="ring" id="ring1"><p class="pPadded">Client Reviews:</p>
+        <span id="clientReviews" class="padded"></span>
+      </div>
+      <div class="ring" id="ring1"><p class="pPadded">Satisfaction Guarantee:<br><br>100%</p></div>
+      <img id="statimg" src="statistic-right.jfif">
+    </div>
+  </div>
+</section> 
 
-        <div class="projectCnt">
-          <label class="fw hlabel">// This Website  &#9757; //</label><br>
-          <img id="webDev1"src="webDev1.png"/>
-          <br>
-          <div class="cnt">
-          <p>That's right!<br><br> This portfolio website marked the beginning of my malleable journey
-             into the world of a Front-End Website developer. In commencing this project i quickly learned
-             how the different functions of a development team can become extensive if not properly organised and assigned.
-             Though I spent the dawning hours of the project cultivating the content of this page, I found myself rewriting aspects.
-             I feel the experience of building something new blobk by block resonates with a quote by Georg C.Lichtenburg; 
-             <p class="quote">"I cannot say whether things will get better if we change; what I can say is they must change if they are to get better."</p>
-          </p>
-          <p>As my skills diversified, I developed a taste for intricacy--the minor details moulding my vision of a desirable portfolio.</p>
-             
-          <label class="fw hlabel">// Features &#10024;</label>
-          <p>This Website displays a plethora of;<br>
-             -Dynamic Animations<br>
-             -Interactive Navigable menu<br>
-             -Glassmorphic Content Panels allowing a light weight design<br>
-             -Live Statistic Trackers<br>
-          </p> 
-          </div>
+<section>
+  <div class="projects">
+    <div class="headinglabel">
+          <span>Projects!</span>
+    </div>
+    <div class="content">
+    <!-- Website development Panel -->
+      <div class="projectCnt">
+        <label class="fw hlabel"><ion-icon name="flash"></ion-icon> This Website </ion-icon></label><br>
+        <img id="webDev1"src="webDev1.png"/>
+        <br>
+        <div class="cnt">
+        <p>That's right!<br><br> This portfolio website marked the beginning of my malleable journey
+          into the world of a Front-End Website developer. In commencing this project i quickly learned
+          how the different functions of a development team can become extensive if not properly organised and assigned.
+          Though I spent the dawning hours of the project cultivating the content of this page, I found myself rewriting aspects.
+          I feel the experience of building something new blobk by block resonates with a quote by Georg C.Lichtenburg; 
+          <p class="quote">"I cannot say whether things will get better if we change; what I can say is they must change if they are to get better."</p>
+        </p>
+        <p>As my skills diversified, I developed a taste for intricacy--the minor details moulding my vision of a desirable portfolio.</p>
+        <label class="fw hlabel"><ion-icon name="git-branch"></ion-icon> Features </label>
+        <p>This Website displays a plethora of;<br>
+          -Dynamic Animations<br>
+          -Interactive Navigable menu<br>
+          -Glassmorphic Content Panels allowing a light weight design<br>
+          -Live Statistic Trackers<br>
+        </p> 
         </div>
+      </div>
 
         <!-- E-commerce panel -->
         <div class="projectCnt">
-          <label class="fw hlabel">// Content Managment System (CMS) &#127793; //</label><br>  
+          <label class="fw hlabel"><ion-icon name="list-box"></ion-icon> CMS </label><br>  
           <div class="cnt">
           <p>Your creativity; unshackled and free! <br><br>
             Whether it is a blog, website, or webapplication; Content Made Simple is the service for you.
@@ -164,47 +147,53 @@
         </div>
 
         <!--CMS Project Panel-->
-        <div class="projectCnt">
-          <label class="fw hlabel">// E-Commerce  &#128179; //</label><br>
-          <div class="cnt">
-          <p>Time for some late night shopping!<br><br>
-            This refined highly refined e-shop utilises a simple UX that allows fast, fluid navigation between pages.
-            Featuring a high speed server turnover, marketable requests are verified and processed by the websites internal autonomous functions; 
-            allowing concise ordering to be completed quickly.<br><br>
-        
-            <div class="fl-cont">
-            <img src="swiftFox logo alt.png">
-            </div>
-
-            Light-speed payment gateways authorise account information effeciently, removing the dreaded loading bar that never ends.
-            Customer and Merchant satisfaction is at the core of our teams aspirations.<br><br>
-            @swiftfox we work to grow your business.
-          </p>
+    <div class="projectCnt">
+      <label class="fw hlabel"><ion-icon name="card"></ion-icon> E-Commerce </label><br>
+      <div class="cnt">
+        <p>Time for some late night shopping!<br><br>
+          This refined highly refined e-shop utilises a simple UX that allows fast, fluid navigation between pages.
+          Featuring a high speed server turnover, marketable requests are verified and processed by the websites internal autonomous functions; 
+          allowing concise ordering to be completed quickly.<br><br>
+        <div class="fl-cont">
+          <img src="swiftFox logo alt.png">
         </div>
-        </div>
-        
-        <!--Webapp Panel-->
-        <div class="projectCnt">
-          <label class="fw hlabel">// Webapp  &#128241; //</label><br> 
-          <div class="cnt">
-          <p>Time for some late night shopping!<br><br>
-            This refined highly refined e-shop utilises a simple UX that allows fast, fluid navigation between pages.
-            Featuring a high speed server turnover, marketable requests are verified and processed by the websites internal autonomous functions; 
-            allowing concise ordering to be completed quickly.<br><br>
-        
-            <div class="fl-cont">
-            <img src="swiftFox logo alt.png">
-            </div>
-
-            Light-speed payment gateways authorise account information effeciently, removing the dreaded loading bar that never ends.
-            Customer and Merchant satisfaction is at the core of our teams aspirations.<br><br>
-            @swiftfox we work to grow your business.
-          </p>
-        </div>
-        </div>
+          Light-speed payment gateways authorise account information effeciently, removing the dreaded loading bar that never ends.
+          Customer and Merchant satisfaction is at the core of our teams aspirations.<br><br>
+          @swiftfox we work to grow your business.
+        </p>
       </div>
+    </div>
+        
+    <!--Webapp Panel-->
+    <div class="projectCnt">
+      <label class="fw hlabel"><ion-icon name="phone-portrait"></ion-icon> Webapp</label><br> 
+      <div class="cnt">
+        <p>Time for some late night shopping!<br><br>
+           This refined highly refined e-shop utilises a simple UX that allows fast, fluid navigation between pages.
+           Featuring a high speed server turnover, marketable requests are verified and processed by the websites internal autonomous functions; 
+          allowing concise ordering to be completed quickly.<br><br>
+          <div class="fl-cont">
+          <img src="swiftFox logo alt.png">
+          </div>
+          Light-speed payment gateways authorise account information effeciently, removing the dreaded loading bar that never ends.
+          Customer and Merchant satisfaction is at the core of our teams aspirations.<br><br>
+          @swiftfox we work to grow your business.
+        </p>
+      </div>
+    </div>
   </div>
- <!-- Wrapper div -->
+</section>
+
+<section>
+  <div class="container">
+    <div class="content">
+      <div class="tribunal"><img src="...">Tribunal1</div>
+      <div class="tribunal"><img src="...">Tribunal2</div>
+      <div class="tribunal"><img src="...">Tribunal3</div>
+      <div class="tribunal"><img src="...">Tribunal4</div>
+    </div>
+  </div>
+</section>
 
 <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
