@@ -7,14 +7,11 @@
     <meta name="viewport" content="width=device-width, inital-scale=1">
     <!-- Stylesheets -->
     <link rel="stylesheet" type="text/css" href="acl.css">
-    <link rel="stylesheet" type="text/scss" href="Breakpoints.scss">
     <link rel="stylesheet" type="text/css" href="Background-animation.css">
+    <link rel="stylesheet" type="text/css" href="Breakpoints.css">
     <link rel="stylesheet" type="text/css" href="navigation.css">
     <link rel="stylesheet" type="text/css" href="toast.css">
     <script src="navbarController.JS"></script>
-    <script src="toastBotController.js"></script>
-
-    
     
     <title> Eden Revell- PortfolioPage </title>
 
@@ -43,7 +40,6 @@
 </head>
 <body>
 
-<div id="wrapper">
   <section>
     <div class="wave wave1"></div>
     <div class="wave wave2"></div>
@@ -51,17 +47,16 @@
     <div class="wave wave4"></div>
   </section>
   <!-- Toast BOT -->
-    <div class="toast">
-      <img class="thumbnail" src="toastbot.png">
+    <div id="toast" class="toast">
+      <ion-icon class="thumbnail" name="logo-ionitron"></ion-icon>
       <div class="botCnt">
         <div class="toastHead"><label>Toast_BOT</label>
-          <button class="dismiss"><a class="icon">X</a></button>
+          <button id="dismiss" onclick="closeToast()">X</button>
         </div>
         <div class="toastCnt"><p>Hey Stranger! You must be new to this Website</p></div>
       </div>
     </div>
 <!-- End Toast BOT -->
-
   <div class="navigation">
     <div class="logoAnchor"><label> < > Front-End Developer </label></div>
     <ul>
@@ -82,46 +77,51 @@
         </li>
         <div class="indicator"></div>
     </ul>
+    <!-- Mobile Navbar: columned-->
   </div>
 
-   <div class="headImage flex headDiv">
+   <div class="headImage">
      <img class="banner-image" src="vector_237_09-01-512.webp">
-     <div class="container ralign"><label class="hlabel fw">Welcome!</label>
+    <div class="container ralign"><label class="hlabel fw">Welcome!</label>
       <p>It's amazing to have so many explorers on along for my newest voyage into a technological future. The summation of content throughout this page will
         index the journey from:<br>
-        <br> &#10549; Front-end to Back-end coding
-        <br> &#10549; Pentesting 
+        <br> &#10549; Front-End to Back-End coding
+        <br> &#10549; Pen-testing 
         <br> &#10549; Microserivce Development 
         <br> &#10549; Github Contributions 
         <br><br>
         Not to mention a range of Webapps, games, algorithms, and acculmuative coding experience.</p></div>
-   </div>
+     </div>  
 
 
     <!-- Home card panes -->
-    <div class="container flex">
-          <span id="statCnt"><label class="fw">Statistics:</label></span>
-          <div class="ringCnt">
+    <div class="statistics">
+        <div class="headinglabel">
+        <span><label class="fw">Statistics:</label></span>
+        </div>
+        <div class="ringCnt">
             <div class="ring" id="ring1"><p class="pPadded">Github Contributions Made:</p>
               <span id="Contributions" class="padded"></span>
             </div>
-            <div class="ring" id="ring1"><p class="pPadded">Projects Completed:<br><br><strong>1</strong></p>
+            <div class="ring" id="ring1"><p class="pPadded">Projects Completed:<br><br>1</p>
               <span id="Projects" class="padded"></span>
             </div>
             <div class="ring" id="ring1"><p class="pPadded">Client Reviews:</p>
               <span id="clientReviews" class="padded"></span>
             </div>
-            <div class="ring" id="ring1"><p class="pPadded">Satisfaction Guarantee:<br><br><strong>100%<strong></p></div>
-          </div>
+            <div class="ring" id="ring1"><p class="pPadded">Satisfaction Guarantee:<br><br>100%</p></div>
+        <img id="statimg" src="statistic-right.jfif">
+      </div>
     </div>
     
-    <div class="container">
+    <div class="projects">
         <div class="headinglabel">
           <span>Projects!</span>
         </div>
         <div class="content">
         <!-- Website development Panel -->
-        <div class="contentSbs">
+
+        <div class="projectCnt">
           <label class="fw hlabel">// This Website  &#9757; //</label><br>
           <img id="webDev1"src="webDev1.png"/>
           <br>
@@ -131,7 +131,7 @@
              how the different functions of a development team can become extensive if not properly organised and assigned.
              Though I spent the dawning hours of the project cultivating the content of this page, I found myself rewriting aspects.
              I feel the experience of building something new blobk by block resonates with a quote by Georg C.Lichtenburg; 
-             <p class="quote"> <strong>"</strong>I cannot say whether things will get better if we change; what I can say is they must change if they are to get better.<strong>"</strong></p>
+             <p class="quote">"I cannot say whether things will get better if we change; what I can say is they must change if they are to get better."</p>
           </p>
           <p>As my skills diversified, I developed a taste for intricacy--the minor details moulding my vision of a desirable portfolio.</p>
              
@@ -146,16 +146,17 @@
         </div>
 
         <!-- E-commerce panel -->
-        <div class="contentSbs ">
-
+        <div class="projectCnt">
           <label class="fw hlabel">// Content Managment System (CMS) &#127793; //</label><br>  
           <div class="cnt">
           <p>Your creativity; unshackled and free! <br><br>
             Whether it is a blog, website, or webapplication; Content Made Simple is the service for you.
-            With a core focus placed on utility and seamless tranferance of edited data, We at CMS pride ourselves on aiding startup businesses<br><br
+            With a core focus placed on utility and seamless tranferance of edited data, We at CMS pride ourselves on aiding startup businesses<br><br>
+        
             <div class="fl-cont">
             <img src="CMSlogoalt.png">
             </div>
+
             Through a combination of outsourced projects, CMS utilises a range of microservices to fulfill the culmination of user interests.
             Afoot is a new hybrid of service that will inspire all to follow their creative passions; and generate an outlet for free expression.
           </p>
@@ -163,7 +164,7 @@
         </div>
 
         <!--CMS Project Panel-->
-        <div class="contentSbs ">
+        <div class="projectCnt">
           <label class="fw hlabel">// E-Commerce  &#128179; //</label><br>
           <div class="cnt">
           <p>Time for some late night shopping!<br><br>
@@ -183,7 +184,7 @@
         </div>
         
         <!--Webapp Panel-->
-        <div class="contentSbs ">
+        <div class="projectCnt">
           <label class="fw hlabel">// Webapp  &#128241; //</label><br> 
           <div class="cnt">
           <p>Time for some late night shopping!<br><br>
@@ -202,13 +203,11 @@
         </div>
         </div>
       </div>
-      </div>
-    </div> <!-- End container div --> 
-
-    
-</div> <!-- Wrapper div -->
+  </div>
+ <!-- Wrapper div -->
 
 <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
+<script src="toastBotController.js"></script>
 </body>
 </html>
