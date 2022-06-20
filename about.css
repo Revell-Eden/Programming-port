@@ -90,7 +90,7 @@ body {
   .loader:after {
     animation: loader 2s linear infinite 1s;
   }
-.container {
+.aboutContainer {
     padding: 10px 30px;
     background-color: rgba(255, 255, 255, 0.3);
     border-radius: 10px 0px 0px 10px;
@@ -169,10 +169,10 @@ body {
     width: 20em;
     height: 20em;
     perspective: 1000px;
-    position: relative;
     display: flex;
-    margin-right: 20px;
+    margin-right: 0.5em;
     margin-bottom: 20px;
+    margin: auto;
 }
 
 .flip-card-inner {
@@ -190,7 +190,8 @@ body {
 
 .flip-card-front, .flip-card-back {
     position: absolute;
-    height: 100%;
+    width: 20em;
+    height: 20em;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
 }
@@ -207,9 +208,10 @@ body {
 .flip-card-back {
     background-color: teal;
     color: #fff;
+    width: 20em;
     transform: rotateY(180deg);
     border-radius: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 0.5em;
     padding:30px 30px 0px 30px;
 }
 .bumper {
@@ -250,7 +252,7 @@ label {
     left: 0;
     width: 100%;
 }
-.banner-image {
+.aboutbanner-image {
     width: 100%;
 }
 
