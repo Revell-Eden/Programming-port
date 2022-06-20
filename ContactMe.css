@@ -1,18 +1,12 @@
 body {
     font-size: 14px;
-    display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 35px;
     background-color: #222327;
 }
 
 
 /* navbar elements */
-body {
-    
-}
-
 .container {
     padding: 10px 30px;
     padding-bottom: 0px;
@@ -25,23 +19,24 @@ body {
 .container-box {
     background-color: #fff;
     display: flex;
-    padding-left: 60px;
+    padding-left: 1.5em;
     padding-right: 0px;
     box-shadow: -2px 2px #b3b3b3;
 }
 
 .container-left {
-    flex-basis: 70%;
+    width: 70%;
 }
 
 .container-right {
-    flex-basis: 30%;
     padding: 20px;
     background-color: teal;
     color: #fff;
+    flex-wrap: wrap;
 }
-
 h1 {
+    
+    margin-top: 1.5em;
     margin-bottom: 10px;
     background-color: #fff;
     border-radius: 10px;
@@ -61,7 +56,7 @@ h1 {
 
 .input-group {
     flex-basis: 45%;
-    width: 40%;
+    width: 100%;
     padding-right: 45px;
     display: inline-block;
     margin-bottom: 5px;
@@ -124,14 +119,12 @@ label {
     font-weight: 600;
     margin-bottom: 30px;
     color: #fff;
-    width: 40%;
     margin: 0;
     margin-right: none;
 }
 
-
 tr td:first-child {
-    padding-right: 20px;
+    padding-right: 5px;
 }
 
 tr td {
@@ -140,14 +133,18 @@ tr td {
 
 table {
     margin-left: 0px;
+    font-size: 0.75em;
 }
 
 .footer {
+    margin: auto;
+    position: absolute;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
-    width: 100%;
     display: flex;
-    
+    bottom: 0em;
+    left: 0;
+    width: 100%;
 }
 .banner-image {
     width: 100%;
