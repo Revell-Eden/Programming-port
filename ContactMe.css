@@ -2,18 +2,18 @@ body {
     font-size: 14px;
     justify-content: center;
     align-items: center;
-    background-color: #222327;
+    background-color: #100e17;;
 }
 
 
 /* navbar elements */
-.container {
+.contactContainer {
     padding: 10px 30px;
     padding-bottom: 0px;
     margin-bottom: 20px;
     background-color: rgba(255, 255, 255, 0.3);
     border-radius: 10px;
-    padding: 10px;
+    padding: 1em;
 }
 
 .container-box {
@@ -23,9 +23,13 @@ body {
     padding-right: 0px;
     box-shadow: -2px 2px #b3b3b3;
 }
-
+.contentSbs {
+    display: flex;
+}
 .container-left {
     width: 70%;
+    padding: 0.5em 2em;
+    border-radius: 0.5em 0 0 0.5em;
 }
 
 .container-right {
@@ -33,6 +37,7 @@ body {
     background-color: teal;
     color: #fff;
     flex-wrap: wrap;
+    border-radius: 0 0.5em 0.5em 0;
 }
 h1 {
     
@@ -138,8 +143,8 @@ table {
 
 .footer {
     margin: auto;
-    position: absolute;
-    background-color: rgba(255, 255, 255, 0.1);
+    position: relative;
+    background-color: teal;
     border-radius: 10px;
     display: flex;
     bottom: 0em;
@@ -151,12 +156,12 @@ table {
 }
 
 .query {
-    background-color: teal;
-    border-color: teal;
+    background-color: #fff;
+    border-color: #fff;
     width: 3em;
     height: 3em;
     border-radius: 50%;
-    color: #fff;
+    color: teal;
     padding: 5px;
 }
 

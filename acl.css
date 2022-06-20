@@ -40,12 +40,16 @@ p {
     margin-bottom: 5px;
     flex-wrap: wrap;
 }
-.projects {
+#projects {
     justify-content: center;
     border-radius: 10px;
     margin-bottom: 5px;
+    height: 50em;
+    overflow: hidden;
 }
-
+.fl-cont {
+    display: flex;
+}
 .headinglabel {
     padding: 0px 20px;
     border-bottom: 3px solid teal;
@@ -79,6 +83,7 @@ p {
     margin-right: 5px;
     padding-bottom: 20px;
     margin-bottom: 5px;
+    height: 45em;
 }
 
 #statCnt {
@@ -93,7 +98,9 @@ p {
     height: 60%;
     margin-top: 5px;
 }
-
+.cnt {
+    padding: 1em;
+}
 .ring {
     background-color: rgba(255, 255, 255, 0.3);
     border-radius: 50%; 
@@ -147,4 +154,90 @@ img {
     padding: 0.5em;
     background-color: teal;
     border-radius: 0.5em;
+}
+
+.footer {
+    margin: auto;
+    position: relative;
+    background-color: teal;
+    border-radius: 10px;
+    display: flex;
+    bottom: 0em;
+    left: 0;
+    width: 100%;
+}
+.banner-image {
+    width: 100%;
+}
+
+.query {
+    background-color: #fff;
+    border-color: #fff;
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    color: teal;
+    padding: 5px;
+}
+
+.queryLeaf {
+    padding: 5px;
+    float: left;
+    margin: 10px;
+    display: flex;
+}
+.queryLeaf span {
+    padding-right: 10px;
+    vertical-align:middle;
+}
+.queryAllignment {
+    width: 100%;
+    height: 100%;
+}
+.queryLeaf p {
+    padding-left: 40px;
+    color: teal;
+}
+.btn {
+    width: 2em;
+    height: 2em;
+    cursor: pointer;
+}
+#extendPrj {
+    background-color: rgba(0, 0, 0, 0.671);
+    padding: 0.5em;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0.5em;
+}
+#extendPrj:hover {
+    cursor: pointer;
+}
+.openSesame {
+    animation: openArrow 5s linear ease-out;
+}
+@keyframes openArrow {
+    0% {
+    } 100% {
+        transform: rotateZ(-180deg);
+    }
+}
+.placeHolder {
+    background-color: rgb(29, 29, 29);
+    border-radius: 10px;
+    box-shadow: -2px 2px #b3b3b3;
+    padding: 0px 20px;
+    flex-wrap: wrap;
+    padding: 10px 20px; 
+    margin-right: 5px;
+    padding-bottom: 20px;
+    margin-bottom: 5px;
+    height: 45em;
+    text-align: center;
+    width: 40em;
+    
+}
+.holderLogo {
+    font-size: 15em;
+    color: #fff;
 }

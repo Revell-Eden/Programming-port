@@ -1,0 +1,132 @@
+/* Phone formating */
+@media screen and (min-width: 480px) {
+    .headImage {
+        display: block;
+    }
+    .projects {
+       background-color: transparent;
+       padding: 0px;
+    }
+    .statistics {
+       background-color: transparent;
+    } .ring {
+       background-color: transparent;
+       border: 10px solid teal;
+       width: 7em;
+       height: 7em;
+    }
+    .projectCnt {
+        width: 50em;
+        height: 36em;
+    }
+}
+/* pixel5 */
+@media screen and (min-width: 393px) {
+    .headImage {
+        display: block;
+    }
+    .statistics {
+        background-color: transparent;
+    }.ring {
+        background-color: transparent;
+        border: 10px solid teal;
+        width: 7.4em;
+        height: 7.4em;
+    }
+    .projectCnt {
+        width: 33.5em;
+        height: 42em;
+    }
+}
+/* Samsung Galaxy S8+ */
+@media screen and (min-width: 360px) {
+    .ring {
+        background-color: transparent;
+        border: 10px solid teal;
+        width: 7.19em;
+        height: 7.19em;
+    }
+}
+/* Samsung Galaxy S20 Ultra */
+@media screen and (min-width: 412px) {
+    .ring {
+        background-color: transparent;
+        border: 10px solid teal;
+        width: 6.4em;
+        height: 6.4em;
+    }
+}
+/* ipad Air */ 
+@media screen and (min-width: 820px) {
+    .headImage {
+        display:flex;
+    }
+    .ring {
+        background-color: transparent;
+        border: 10px solid teal;
+        width: 8em;
+        height: 8em;
+    }
+    .projectCnt {
+        width: 55em;
+        height: 48em;
+    }
+    .bubblecnt {
+        width: 27.85em;
+        height: 18em;
+    }
+    .bubbleBox {
+        width: 14em;
+    }
+    .flip-card {
+        width: 17.95em;
+        height: 17.95em;
+        font-size: 1.51em;
+    } .flip-card-front {
+        width: 17.95em;
+        height: 17.95em;
+    } .flip-card-back {
+        height: 16.7em;
+    }
+    .container {
+        width: 20em;
+    }
+    .thumbnail {
+        width: 30em;
+    }
+}
+/* Large displays */
+@media screen and (min-width: 1024px) {
+    .headImage {
+        display:flex;
+        height: 35em;
+    } .banner-image {
+        width: 50em;
+        height: 35em;
+    }
+    .ring {
+        background-color: transparent;
+        border: 10px solid teal;
+        width: 7.45em;
+        height: 7.45em;
+    }
+    .projectCnt {
+        width: 32.5em;
+        height: 45em;
+    }
+    .ringCnt {
+        height: 15em;
+    } #statimg{
+        padding:  0px 40px;
+        width: 28em;
+    }.thumbnail {
+        width: 40em;
+    } .aboutContainer {
+        width: 25em;
+        height: 25em;
+    } .contact-right {
+        width: 20em;
+    } .container-left {
+        width: 60%;
+    }
+}

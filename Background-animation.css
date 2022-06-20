@@ -1,16 +1,14 @@
 /* Waves */
-body {
-    background: #243b47;
-}
-section {
+.bgAnim {
     position: fixed;
-    bottom: -3em;
+    bottom: 0em;
     width: 100%;
     height: 10vh;
     left: 0px;
-    margin-bottom: 0;
+    margin: auto;
+    z-index: -1000;
 }
-section .wave {
+.bgAnim .wave {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -21,28 +19,28 @@ section .wave {
     background-repeat: repeat-x;
 }
 
-section .wave.wave1 {
+.bgAnim .wave.wave1 {
     animation: animate 30s linear infinite;
     z-index: -1000;
     opacity: 1;
     animation-delay: 0s;
     bottom: 0;
 }
-section .wave.wave2 {
+.bgAnim .wave.wave2 {
     animation: animate2 15s linear infinite;
     z-index: -999;
     opacity: 0.5;
     animation-delay: -5s;
     bottom: 10px;
 }
-section .wave.wave3 {
+.bgAnim .wave.wave3 {
     animation: animate3 15s linear infinite;
     z-index: -998;
     opacity: 0.2;
     animation-delay: -2s;
     bottom: 10px;
 }
-section .wave.wave4 {
+.bgAnim .wave.wave4 {
     animation: animate4 5s linear infinite;
     z-index: -997;
     opacity: 0.7;
@@ -81,3 +79,37 @@ section .wave.wave4 {
         background-position-x: 1000px;
     }
 }
+.bgScene {
+    margin-top: 3em;
+    height: 3.5em;
+    display: flex;
+    background-color: rgba(128, 128, 128, 0.3);
+    border-radius: 2em;
+    overflow: hidden;
+    
+    position: relative;
+    line-height: 10em;
+    flex-wrap: wrap;
+    padding: 0.5em;
+}
+
+.node {
+    background-color: transparent;
+    color: #fff;
+    border: 0.25em solid aqua;
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    top: 3em;
+    margin: auto;
+}
+
+@keyframes cycleScene {
+    0% {
+        transform: perspective(1000px) rotateY(0deg);
+      }
+      100% {
+        transform: perspective(1000px) rotateY(360deg);
+      }
+} 
+
