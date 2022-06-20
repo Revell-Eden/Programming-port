@@ -5,7 +5,7 @@ body {
     color: #fff;
     margin: auto;
     padding:0.5em;
-    background: #243b47;
+    background-color: #100e17;
     flex-wrap: wrap;
 }
 section {
@@ -70,7 +70,7 @@ p {
     margin-bottom: 5px;
 }
 .projectCnt {
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: teal;
     border-radius: 10px;
     box-shadow: -2px 2px #b3b3b3;
     padding: 0px 20px;
