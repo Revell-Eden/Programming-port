@@ -21,16 +21,17 @@
 
 </head>
 <body>
+  <div class="bgAnim">
+    <div class="wave wave1"></div>
+    <div class="wave wave2"></div>
+    <div class="wave wave3"></div>
+    <div class="wave wave4"></div>
+  </div>
 
-    <section>
-      <div class="wave wave1"></div>
-      <div class="wave wave2"></div>
-      <div class="wave wave3"></div>
-      <div class="wave wave4"></div>
-    </section>
-      
+  <!-- Navigation Section -->
+  <section>
     <div class="navigation">
-      <div class="logoAnchor"><label> < > Front-End Developer </label></div>
+      <div class="logoAnchor"><label> < > Full-Stack Developer </label></div>
       <ul>
           <li class="list ">
               <a href="Portfolio reimagined Home.html">
@@ -51,172 +52,240 @@
           <div class="indicator"></div>
       </ul>
     </div>
+</section>
 
-        <div class="headImage">
-            <img class="banner-image" src="bg-about.jpg">
+<!-- About Me container -->
+<section>
+  <div class="headImage">
+      <img class="banner-image" src="bg-about.jpg">
+  </div>
+  <div class="headinglabel">
+    <span>About Me</span>
+  </div>
+  <p class="article articleclr">console.log ("Hello World!");</p>
+    <div class="contentSbs">
+      <div class="container">
+        <p><br> My name is Eden Revell but you can call me Jack (A jack of all trades). I am an ispiring programming student studying under the Learning people banner of skilsoft's Code+ Aspire Journey.
+        Programming fufills my urge to learn an extremely diverse subset of languages within an extremely fast paced enviroment &#9889;, a skill I have become akine to.
+        Web design reveals hindsight that will unvail a more breathable design before the product goes to market, further developing their defintion of a finished product.
+        Furthermore, the provision of perfectly layered webpages parallel to the client imagined perfect product, remains #1 priority as each instance will reflect my abilities as a craftsman. 
+        I aim to be more than just my best, rather the synonymous best that will continually grow and change with every endevour. <br><br>
+        </p>
+      </div>
+      <img class="thumbnail" src="vector-about.webp">
+    </div>
+    <div class="download">
+      <div class="loader">
+        <button class="downbutton" type="button" onclick="download()"><a class="fw" href="CV.developer.pdf"><label class="fw">Download a turbocharged CV!</label></a></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Languages Section -->
+<section>
+  <!-- Html Language Info-->
+  <div class="headinglabel">
+      <span><label class="fw">Languages:</label></span>
+  </div>
+  <div class="cardContainer">
+    <div class="card">
+      <h3 class="title"><ion-icon class="node" name="logo-html5"></ion-icon></h3>
+      <div class="bar">
+        <div class="emptybar"></div>
+        <div class="filledbar"></div>
+      </div>
+      <div class="cnt">
+        <p>HTML</p>
+        <p class="cardText">The inticacies of Front-End Development,
+           accentuated in the streamline development of user interactable dynamic websites.<br/><br/>
+           - E-Commerce <br/>
+           - Online Banking <br/>
+           - Business + Enterprise
+        </p>
+      </div>
+      <div class="circle">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <circle class="stroke" cx="60" cy="60" r="50"/>
+      </svg>
+      </div>
+    </div>
+    <!-- CSS Language Info-->
+    <div class="card">
+      <h3 class="title"><ion-icon class="node" name="logo-css3"></ion-icon></h3>
+      <div class="bar">
+        <div class="emptybar"></div>
+        <div class="filledbar"></div>
+      </div>
+      <div class="cnt">
+        <p>CSS</p>
+        <p class="cardText">Creativity unrestricted by the expansive 
+          cascading style sheets that give a vibrant fresh feel to any web application. <br/><br/>
+          - Captivating Animation <br/>
+          - Seamless loops <br/>
+          - Large project bones</p>
+      </div>
+      <div class="circle">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <circle class="stroke" cx="60" cy="60" r="50"/>
+      </svg>
+      </div>
+    </div>
+    <!-- NodeJs Language Info-->
+    <div class="card">
+      <h3 class="title"><ion-icon class="node" name="logo-javascript"></ion-icon></ion-icon></h3>
+      <div class="bar">
+        <div class="emptybar"></div>
+        <div class="filledbar"></div>
+      </div>
+      <div class="cnt">
+        <p>Javascript</p>
+        <p class="cardText">My abilities in javascript extend across a broad array of applications. <br/><br/> 
+          -Natural Simulation <br/>
+          -Computer Learning <br/>
+          -Advanced Game mechanics</p>
+      </div>
+      <div class="circle">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <circle class="stroke" cx="60" cy="60" r="50"/>
+      </svg>
+      </div>
+    </div>
+    <!-- Python Language Info-->
+    <div class="card">
+      <h3 class="title"><ion-icon class="node" name="logo-python"></ion-icon></h3>
+      <div class="bar">
+        <div class="emptybar"></div>
+        <div class="filledbar"></div>
+      </div>
+      <div class="cnt">
+        <p>Python</p>
+        <p class="cardText">Crucial to the vital functions of the Back-End networks. The utility of Python aids a more comprhensive network setup.<br/><br/>
+          - Microserivce Development<br/>
+          - Application Develpment<br/>
+          - Synchronous Platforms
+        </p>
+      </div>
+      <div class="circle">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <circle class="stroke" cx="60" cy="60" r="50"/>
+      </svg>
+      </div>
+    </div>
+    <!-- Git CLi Language Info-->
+    <div class="card">
+      <h3 class="title"><ion-icon class="node"  name="git-network"></ion-icon></h3>
+      <div class="bar">
+        <div class="emptybar"></div>
+        <div class="filledbar"></div>
+      </div>
+      <div class="cnt">
+        <p>VCS CLI</p>
+        <p class="cardText">Utility of a version control system allows ready made changes to be contributed and rolled-back with ease.<br/><br/>
+        - Github UI <br/>
+        - Git CLi <br/>
+        - Bash <br/> </p>
+      </div>
+      <div class="circle">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <circle class="stroke" cx="60" cy="60" r="50"/>
+      </svg>
+      </div>
+    </div>
+  </div>
+</div>
+  
+</section>
+
+<!-- Flip-Card Section -->
+<section>
+  <div class="headinglabel">
+    <span><label class="fw">Qualifications:</label></span>
+  </div>
+  <div class="contentSbs padTop"> 
+    <div class="flip-card">
+      <div class="flip-card-inner"> 
+        <div class="flip-card-front">
+          <img class="bumper" src="panel-istqb.png"/>
         </div>
-
-        <!-- About Me container -->
-          <div class="headinglabel">
-            <span>About Me</span>
-          </div>
-          <p class="article">console.log ("Hello World!");</p>
-          
-            <div class="contentSbs">
-              <div class="container">
-                <p><br> My name is Eden Revell but you can call me Jack (A jack of all trades). I am an ispiring programming student studying under the Learning people banner of skilsoft's Code+ Aspire Journey.
-                Programming fufills my urge to learn an extremely diverse subset of languages within an extremely fast paced enviroment &#9889;, a skill I have become akine to.
-                Web design reveals hindsight that will unvail a more breathable design before the product goes to market, further developing their defintion of a finished product.
-                Furthermore, the provision of perfectly layered webpages parallel to the client imagined perfect product, remains #1 priority as each instance will reflect my abilities as a craftsman. 
-                I aim to be more than just my best, rather the synonymous best that will continually grow and change with every endevour. <br><br>
-                </p>
-              </div>
-              <img class="thumbnail" src="vector-about.webp">
-            </div>
-            <div class="download">
-              <div class="loader">
-                <button class="downbutton" type="button" onclick="download()"><a class="fw" href="CV.developer.pdf"><label class="fw">Download a turbocharged CV!</label></a></button>
-              </div>
-            </div>
-          </div>
-              <!-- Languages Div -->
-              <!-- HTML Language information -->
-            <div class="headinglabel">
-                <span><label class="fw">Languages:</label></span>
-            </div>
-            <div class="contentSbs padTop">  
-              <div class="bubblecnt">
-                <div class="contentSbs">
-                  <div class="dashboard">
-                    <svg>
-                      <circle class="bg" cx="57" cy="57" r="52" />
-                      <circle class="meter-1" cx="57" cy="57" r="52" />
-                    </svg>
-                  </div>
-                  <div class="bubbleBox">
-                    <div class="headinglabel">. Html</div>
-                    <p>Test content to see how the content will stretch the appended parental class.<br><br><br><br></p>
-                  </div>
-                </div>
-              </div>
-              <!-- Javascript information -->
-              <div class="bubblecnt">
-                <div class="contentSbs">
-                  <div class="dashboard">
-                    <svg>
-                      <circle class="bg" cx="57" cy="57" r="52" />
-                      <circle class="meter-2" cx="57" cy="57" r="52" />
-                    </svg>
-                  </div>
-                  <div class="bubbleBox">
-                    <div class="headinglabel">. Js</div>
-                    <p class="contentSbs">Test content to see how the content will stretch the appended parental class.</p>
-                  </div>
-                </div>
-              </div>
-              <!-- C# Information -->
-              <div class="bubblecnt">
-                <div class="contentSbs">
-                  <div class="dashboard">
-                    <svg>
-                      <circle class="bg" cx="57" cy="57" r="52" />
-                      <circle class="meter-3" cx="57" cy="57" r="52" />
-                    </svg>
-                  </div>
-                  <div class="bubbleBox">
-                    <div class="headinglabel">C#</div>
-                    <p class="contentSbs">Test content to see how the content will stretch the appended parental class.</p>
-                  </div>
-                </div>
-              </div>
-            <!-- Python information -->
-            <div class="bubblecnt">
-              <div class="contentSbs">
-                <div class="dashboard">
-                  <svg>
-                    <circle class="bg" cx="57" cy="57" r="52" />
-                    <circle class="meter-4" cx="57" cy="57" r="52" />
-                  </svg>
-                </div>
-                <div class="bubbleBox">
-                  <div class="headinglabel">Python</div>
-                  <p class="contentSbs">Test content to see how the content will stretch the appended parental class.</p>
-                </div>
-              </div>
-            </div>
-           </div>
-
-           <!-- Flip-Card Section -->
-        <div class="headinglabel">
-          <span><label class="fw">Qualifications:</label></span>
+        <div class="flip-card-back">
+          <label>APMG certified!</label>
+            <p> Certified Tester Foundation Level requires a minimum of 6 months practical software testing. 
+                The certification is maleablle in testing and developing streamline stableised products. 
+            </p>
         </div>
-        <div class="contentSbs padTop"> 
-          <div class="flip-card">
-            <div class="flip-card-inner"> 
-              <div class="flip-card-front">
-                <img class="bumper" src="panel-istqb.png"/>
-              </div>
-              <div class="flip-card-back">
-                <label>APMG certified!</label>
-                  <p> Certified Tester Foundation Level requires a minimum of 6 months practical software testing. 
-                      The certification is maleablle in testing and developing streamline stableised products. 
-                  </p>
-              </div>
-            </div>
-          </div>
-          <div class="flip-card">
-            <div class="flip-card-inner"> 
-              <div class="flip-card-front">
-                <img class="bumper" src="panel-apmgscrum.png"/>
-              </div>
-              <div class="flip-card-back">
-                <label>APMG certified!</label>
-                  <p>Qualified Scrum Master: a position that facilitates work preformed to elminate obstacles to the completion of timely tasks and goals.</p>
-              </div>
-            </div>
-          </div>
+      </div>
+    </div>
 
-          <div class="flip-card">
-            <div class="flip-card-inner"> 
-              <div class="flip-card-front">
-                <img class="bumper" src="panel-agile.png"/>
-              </div>
-              <div class="flip-card-back">
-                <label>APMG certified!</label>
-                  <p>A position that facilitates the following tasks:<br><br>
-                     - Project Planning<br><br> 
-                     - The creation of a product roadmap<br><br>
-                     - Release Planning<br><br>
-                     - Sprint planning <br><br>
-                     - Daily stand-ups<br><br>
-                  </p>
-              </div>
-            </div>
-          </div>
+    <div class="flip-card">
+      <div class="flip-card-inner"> 
+        <div class="flip-card-front">
+          <img class="bumper" src="panel-apmgscrum.png"/>
+        </div>
+        <div class="flip-card-back">
+          <label>APMG certified!</label>
+            <p>Qualified Scrum Master: a position that facilitates work preformed to elminate obstacles to the completion of timely tasks and goals.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner"> 
+        <div class="flip-card-front">
+          <img class="bumper" src="panel-agile.png"/>
+        </div>
+        <div class="flip-card-back">
+          <label>APMG certified!</label>
+            <p>A position that facilitates the following tasks:<br><br>
+               - Project Planning<br><br> 
+               - The creation of a product roadmap<br><br>
+               - Release Planning<br><br>
+               - Sprint planning <br><br>
+               - Daily stand-ups<br><br>
+            </p>
+        </div>
+      </div>
+    </div>
               
-          <div class="flip-card">
-            <div class="flip-card-inner"> 
-              <div class="flip-card-front">
-                <img class="bumper" src="panel-fortinet.png"/>
-              </div>
-              <div class="flip-card-back">
-                <label>Fortinet</label>
-                  <p>NSE4 qualified pen tester; knowledge in Fortigate firewall policies, user authentication process, SSL VPN; Alongside protection of networks using security profiles such as, ISP, antivirus, web filtering, and application control.
-                     Furthermore the certification covers routing, siter-to-site IPseec, SSO and diagnostics.
-                  </p>
-              </div>
-            </div>
-          </div>
-        </div>  
-    
-          
+    <div class="flip-card">
+      <div class="flip-card-inner"> 
+        <div class="flip-card-front">
+          <img class="bumper" src="panel-fortinet.png"/>
+        </div>
+        <div class="flip-card-back">
+          <label>Fortinet</label>
+            <p>NSE4 qualified pen tester; knowledge in Fortigate firewall policies, user authentication process, SSL VPN; Alongside protection of networks using security profiles such as, ISP, antivirus, web filtering, and application control.
+               Furthermore the certification covers routing, siter-to-site IPseec, SSO and diagnostics.
+            </p>
+        </div>
+      </div>
+    </div>
+  </div> 
+</section>
+  <!-- Footer --> 
+<div class="footer">
+  <div class="queryLeaf">
+      <span>Github</span>
+      <a class="query" href="https://github.com/Revell-Eden"><ion-icon class="queryAllignment" name="logo-github"></ion-icon></a>
+  </div>
+  <div class="queryLeaf">
+      <span>Linkedin</span>
+      <a class="query" href="https://github.com/Revell-Eden"><ion-icon class="queryAllignment" name="logo-linkedin"></ion-icon></a>
+  </div>
+  <div class="queryLeaf">
+      <span>Facebook</span>
+      <a class="query" href="https://github.com/Revell-Eden"><ion-icon class="queryAllignment" name="logo-facebook"></ion-icon></a>
+  </div>
+</div>        
       
     
 <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
-    
+<script src="galleryController.js"></script>
+  
     <!-- Downlaod CV function-->
     <!-- <script type="text/javascript">
+      <script>
       function DownloadFile(fileName) {
             //Set the File URL.
             var url = "Files/" + CV;
@@ -245,8 +314,8 @@
                 }
             };
             req.send();
-        }; -->
+        }; 
     </script>
-    
+    -->
 </body>
 </html>
